@@ -30,5 +30,12 @@ namespace PrograFinalBD
             nuevo.Show();
             Hide();
         }
+
+        private void BtnRegistrarFuncionariosMenuMaster_Click(object sender, EventArgs e)
+        {
+            CrearFuncionarios nuevo = new CrearFuncionarios();
+            nuevo.Show();
+            Hide();
+        }
     }
 }

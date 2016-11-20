@@ -52,6 +52,12 @@
     <Compile Include="CrearCentrosDeSalud.Designer.cs">
       <DependentUpon>CrearCentrosDeSalud.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrearFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearFuncionarios.Designer.cs">
+      <DependentUpon>CrearFuncionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CrearCentrosDeSalud.resx">
       <DependentUpon>CrearCentrosDeSalud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearFuncionarios.resx">
+      <DependentUpon>CrearFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

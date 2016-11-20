@@ -65,6 +65,7 @@
             this.BtnRegistrarFuncionariosMenuMaster.TabIndex = 2;
             this.BtnRegistrarFuncionariosMenuMaster.Text = "Registrar Funcionarios ";
             this.BtnRegistrarFuncionariosMenuMaster.UseVisualStyleBackColor = false;
+            this.BtnRegistrarFuncionariosMenuMaster.Click += new System.EventHandler(this.BtnRegistrarFuncionariosMenuMaster_Click);
             // 
             // button1
             // 
