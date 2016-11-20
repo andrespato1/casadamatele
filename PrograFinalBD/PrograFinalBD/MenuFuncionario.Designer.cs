@@ -35,6 +35,7 @@
             this.BtnSacarCitasVtnaMenuPaciente = new System.Windows.Forms.Button();
             this.BtnCancelarCitasVtnaMenuPaciente = new System.Windows.Forms.Button();
             this.BtnAtenderPacienteVtnaMenuPaciente = new System.Windows.Forms.Button();
+            this.BtnAyudaVtnMenuFuncionario = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -120,12 +121,25 @@
             this.BtnAtenderPacienteVtnaMenuPaciente.Text = "Atender Paciente";
             this.BtnAtenderPacienteVtnaMenuPaciente.UseVisualStyleBackColor = false;
             // 
+            // BtnAyudaVtnMenuFuncionario
+            // 
+            this.BtnAyudaVtnMenuFuncionario.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BtnAyudaVtnMenuFuncionario.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAyudaVtnMenuFuncionario.Location = new System.Drawing.Point(16, 302);
+            this.BtnAyudaVtnMenuFuncionario.Name = "BtnAyudaVtnMenuFuncionario";
+            this.BtnAyudaVtnMenuFuncionario.Size = new System.Drawing.Size(111, 58);
+            this.BtnAyudaVtnMenuFuncionario.TabIndex = 7;
+            this.BtnAyudaVtnMenuFuncionario.Text = "Ayuda";
+            this.BtnAyudaVtnMenuFuncionario.UseVisualStyleBackColor = false;
+            this.BtnAyudaVtnMenuFuncionario.Click += new System.EventHandler(this.BtnAyudaVtnMenuFuncionario_Click);
+            // 
             // MenuFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PrograFinalBD.Properties.Resources._9290217_M_dico_de_dibujos_animados_que_asisten_a_un_joven_paciente_en_una_sala_de_hospital__Foto_de_archivo1;
             this.ClientSize = new System.Drawing.Size(586, 373);
+            this.Controls.Add(this.BtnAyudaVtnMenuFuncionario);
             this.Controls.Add(this.BtnAtenderPacienteVtnaMenuPaciente);
             this.Controls.Add(this.BtnCancelarCitasVtnaMenuPaciente);
             this.Controls.Add(this.BtnSacarCitasVtnaMenuPaciente);
@@ -149,5 +163,6 @@
         private System.Windows.Forms.Button BtnSacarCitasVtnaMenuPaciente;
         private System.Windows.Forms.Button BtnCancelarCitasVtnaMenuPaciente;
         private System.Windows.Forms.Button BtnAtenderPacienteVtnaMenuPaciente;
+        private System.Windows.Forms.Button BtnAyudaVtnMenuFuncionario;
     }
 }

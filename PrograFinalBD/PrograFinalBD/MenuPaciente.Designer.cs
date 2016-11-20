@@ -34,6 +34,7 @@
             this.BtnCancelarCitaVtnaMenuPaciente = new System.Windows.Forms.Button();
             this.BtnDiagnosticosVtnaMenuPaciente = new System.Windows.Forms.Button();
             this.BtnTratamientoVtnaMenuPaciente = new System.Windows.Forms.Button();
+            this.BtnAyudaVtnMenuPaciente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -107,12 +108,25 @@
             this.BtnTratamientoVtnaMenuPaciente.Text = "Tratamientos";
             this.BtnTratamientoVtnaMenuPaciente.UseVisualStyleBackColor = false;
             // 
+            // BtnAyudaVtnMenuPaciente
+            // 
+            this.BtnAyudaVtnMenuPaciente.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BtnAyudaVtnMenuPaciente.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAyudaVtnMenuPaciente.Location = new System.Drawing.Point(11, 322);
+            this.BtnAyudaVtnMenuPaciente.Name = "BtnAyudaVtnMenuPaciente";
+            this.BtnAyudaVtnMenuPaciente.Size = new System.Drawing.Size(111, 40);
+            this.BtnAyudaVtnMenuPaciente.TabIndex = 6;
+            this.BtnAyudaVtnMenuPaciente.Text = "Ayuda";
+            this.BtnAyudaVtnMenuPaciente.UseVisualStyleBackColor = false;
+            this.BtnAyudaVtnMenuPaciente.Click += new System.EventHandler(this.BtnAyudaVtnMenuPaciente_Click);
+            // 
             // MenuPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PrograFinalBD.Properties.Resources._9290217_M_dico_de_dibujos_animados_que_asisten_a_un_joven_paciente_en_una_sala_de_hospital__Foto_de_archivo1;
             this.ClientSize = new System.Drawing.Size(585, 374);
+            this.Controls.Add(this.BtnAyudaVtnMenuPaciente);
             this.Controls.Add(this.BtnTratamientoVtnaMenuPaciente);
             this.Controls.Add(this.BtnDiagnosticosVtnaMenuPaciente);
             this.Controls.Add(this.BtnCancelarCitaVtnaMenuPaciente);
@@ -135,5 +149,6 @@
         private System.Windows.Forms.Button BtnCancelarCitaVtnaMenuPaciente;
         private System.Windows.Forms.Button BtnDiagnosticosVtnaMenuPaciente;
         private System.Windows.Forms.Button BtnTratamientoVtnaMenuPaciente;
+        private System.Windows.Forms.Button BtnAyudaVtnMenuPaciente;
     }
 }

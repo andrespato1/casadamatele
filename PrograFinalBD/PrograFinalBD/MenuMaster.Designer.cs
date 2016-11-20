@@ -32,6 +32,7 @@
             this.BtnCrearCentrosMenuMaster = new System.Windows.Forms.Button();
             this.BtnRegistrarFuncionariosMenuMaster = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.BtnAyudaVtnMenuMaster = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -79,12 +80,25 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // BtnAyudaVtnMenuMaster
+            // 
+            this.BtnAyudaVtnMenuMaster.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BtnAyudaVtnMenuMaster.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAyudaVtnMenuMaster.Location = new System.Drawing.Point(12, 319);
+            this.BtnAyudaVtnMenuMaster.Name = "BtnAyudaVtnMenuMaster";
+            this.BtnAyudaVtnMenuMaster.Size = new System.Drawing.Size(111, 57);
+            this.BtnAyudaVtnMenuMaster.TabIndex = 4;
+            this.BtnAyudaVtnMenuMaster.Text = "Ayuda";
+            this.BtnAyudaVtnMenuMaster.UseVisualStyleBackColor = false;
+            this.BtnAyudaVtnMenuMaster.Click += new System.EventHandler(this.BtnAyudaVtnMenuMaster_Click);
+            // 
             // MenuMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PrograFinalBD.Properties.Resources.depositphotos_7229389_stock_illustration_computer_repair_service;
             this.ClientSize = new System.Drawing.Size(573, 389);
+            this.Controls.Add(this.BtnAyudaVtnMenuMaster);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnRegistrarFuncionariosMenuMaster);
             this.Controls.Add(this.BtnCrearCentrosMenuMaster);
@@ -102,5 +116,6 @@
         private System.Windows.Forms.Button BtnCrearCentrosMenuMaster;
         private System.Windows.Forms.Button BtnRegistrarFuncionariosMenuMaster;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnAyudaVtnMenuMaster;
     }
 }
