@@ -95,6 +95,7 @@
             this.BtnDiagnosticosVtnaMenuPaciente.TabIndex = 4;
             this.BtnDiagnosticosVtnaMenuPaciente.Text = "Diagnosticos";
             this.BtnDiagnosticosVtnaMenuPaciente.UseVisualStyleBackColor = false;
+            this.BtnDiagnosticosVtnaMenuPaciente.Click += new System.EventHandler(this.BtnDiagnosticosVtnaMenuPaciente_Click);
             // 
             // BtnTratamientoVtnaMenuPaciente
             // 
@@ -107,6 +108,7 @@
             this.BtnTratamientoVtnaMenuPaciente.TabIndex = 5;
             this.BtnTratamientoVtnaMenuPaciente.Text = "Tratamientos";
             this.BtnTratamientoVtnaMenuPaciente.UseVisualStyleBackColor = false;
+            this.BtnTratamientoVtnaMenuPaciente.Click += new System.EventHandler(this.BtnTratamientoVtnaMenuPaciente_Click);
             // 
             // BtnAyudaVtnMenuPaciente
             // 
