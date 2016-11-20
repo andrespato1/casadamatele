@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace PrograFinalBD
 {
-    public partial class MenuFuncionario : Form
+    public partial class CrearCentrosDeSalud : Form
     {
-        public MenuFuncionario()
+        public CrearCentrosDeSalud()
         {
             InitializeComponent();
         }
 
-        private void BtnAtrasVtnaMenuFuncionarios_Click(object sender, EventArgs e)
+        private void CrearCentrosDeSalud_Load(object sender, EventArgs e)
         {
-            PantallaPrincipalDelPrograma nuevo = new PrograFinalBD.PantallaPrincipalDelPrograma();
+
+        }
+
+        private void BtnAtrasVtnCrearCentro_Click(object sender, EventArgs e)
+        {
+            MenuMaster nuevo = new MenuMaster();
             nuevo.Show();
             Hide();
         }
