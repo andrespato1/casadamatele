@@ -52,8 +52,47 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuFuncionario.Designer.cs">
+      <DependentUpon>MenuFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuMaster.Designer.cs">
+      <DependentUpon>MenuMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPaciente.Designer.cs">
+      <DependentUpon>MenuPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaPrincipalDelPrograma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaPrincipalDelPrograma.Designer.cs">
+      <DependentUpon>PantallaPrincipalDelPrograma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuFuncionario.resx">
+      <DependentUpon>MenuFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuMaster.resx">
+      <DependentUpon>MenuMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPaciente.resx">
+      <DependentUpon>MenuPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaPrincipalDelPrograma.resx">
+      <DependentUpon>PantallaPrincipalDelPrograma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +115,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elementos-graficos-de-medicina_23-2147490516.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9290217-M-dico-de-dibujos-animados-que-asisten-a-un-joven-paciente-en-una-sala-de-hospital--Foto-de-archivo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9290217-M-dico-de-dibujos-animados-que-asisten-a-un-joven-paciente-en-una-sala-de-hospital--Foto-de-archivo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_7229389-stock-illustration-computer-repair-service.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

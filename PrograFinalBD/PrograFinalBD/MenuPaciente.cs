@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace PrograFinalBD
 {
-    public partial class Form1 : Form
+    public partial class MenuPaciente : Form
     {
-        public Form1()
+        public MenuPaciente()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void MenuPaciente_Load(object sender, EventArgs e)
         {
 
         }
