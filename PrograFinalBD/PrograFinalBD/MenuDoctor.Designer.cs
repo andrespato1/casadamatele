@@ -28,68 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnCancelarCita = new System.Windows.Forms.Button();
-            this.BtnAsignarCita = new System.Windows.Forms.Button();
-            this.BtnCambiarEstadoCita = new System.Windows.Forms.Button();
-            this.BtnAtenderCita = new System.Windows.Forms.Button();
-            this.BtnEjecutarReportes = new System.Windows.Forms.Button();
+            this.BtnCancelarCitaMenuDoctor = new System.Windows.Forms.Button();
+            this.BtnAsignarCitaMenuDoctor = new System.Windows.Forms.Button();
+            this.BtnCambiarEstadoCitaMenuDoctor = new System.Windows.Forms.Button();
+            this.BtnAtenderCitaMenuDoctor = new System.Windows.Forms.Button();
+            this.BtnEjecutarReportesMenuDoctor = new System.Windows.Forms.Button();
             this.BtnAtrasMenuDoctor = new System.Windows.Forms.Button();
+            this.BtnAyudaMenuDoctor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // BtnCancelarCita
+            // BtnCancelarCitaMenuDoctor
             // 
-            this.BtnCancelarCita.BackColor = System.Drawing.Color.Lime;
-            this.BtnCancelarCita.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelarCita.Location = new System.Drawing.Point(12, 12);
-            this.BtnCancelarCita.Name = "BtnCancelarCita";
-            this.BtnCancelarCita.Size = new System.Drawing.Size(132, 49);
-            this.BtnCancelarCita.TabIndex = 0;
-            this.BtnCancelarCita.Text = "Cancelar Cita";
-            this.BtnCancelarCita.UseVisualStyleBackColor = false;
+            this.BtnCancelarCitaMenuDoctor.BackColor = System.Drawing.Color.Lime;
+            this.BtnCancelarCitaMenuDoctor.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelarCitaMenuDoctor.Location = new System.Drawing.Point(12, 12);
+            this.BtnCancelarCitaMenuDoctor.Name = "BtnCancelarCitaMenuDoctor";
+            this.BtnCancelarCitaMenuDoctor.Size = new System.Drawing.Size(132, 49);
+            this.BtnCancelarCitaMenuDoctor.TabIndex = 0;
+            this.BtnCancelarCitaMenuDoctor.Text = "Cancelar Cita";
+            this.BtnCancelarCitaMenuDoctor.UseVisualStyleBackColor = false;
             // 
-            // BtnAsignarCita
+            // BtnAsignarCitaMenuDoctor
             // 
-            this.BtnAsignarCita.BackColor = System.Drawing.Color.Lime;
-            this.BtnAsignarCita.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAsignarCita.Location = new System.Drawing.Point(12, 67);
-            this.BtnAsignarCita.Name = "BtnAsignarCita";
-            this.BtnAsignarCita.Size = new System.Drawing.Size(132, 49);
-            this.BtnAsignarCita.TabIndex = 1;
-            this.BtnAsignarCita.Text = "Asignar Cita";
-            this.BtnAsignarCita.UseVisualStyleBackColor = false;
+            this.BtnAsignarCitaMenuDoctor.BackColor = System.Drawing.Color.Lime;
+            this.BtnAsignarCitaMenuDoctor.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAsignarCitaMenuDoctor.Location = new System.Drawing.Point(12, 67);
+            this.BtnAsignarCitaMenuDoctor.Name = "BtnAsignarCitaMenuDoctor";
+            this.BtnAsignarCitaMenuDoctor.Size = new System.Drawing.Size(132, 49);
+            this.BtnAsignarCitaMenuDoctor.TabIndex = 1;
+            this.BtnAsignarCitaMenuDoctor.Text = "Asignar Cita";
+            this.BtnAsignarCitaMenuDoctor.UseVisualStyleBackColor = false;
             // 
-            // BtnCambiarEstadoCita
+            // BtnCambiarEstadoCitaMenuDoctor
             // 
-            this.BtnCambiarEstadoCita.BackColor = System.Drawing.Color.Lime;
-            this.BtnCambiarEstadoCita.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCambiarEstadoCita.Location = new System.Drawing.Point(12, 122);
-            this.BtnCambiarEstadoCita.Name = "BtnCambiarEstadoCita";
-            this.BtnCambiarEstadoCita.Size = new System.Drawing.Size(132, 49);
-            this.BtnCambiarEstadoCita.TabIndex = 2;
-            this.BtnCambiarEstadoCita.Text = "Cambiar Estado De Cita";
-            this.BtnCambiarEstadoCita.UseVisualStyleBackColor = false;
+            this.BtnCambiarEstadoCitaMenuDoctor.BackColor = System.Drawing.Color.Lime;
+            this.BtnCambiarEstadoCitaMenuDoctor.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCambiarEstadoCitaMenuDoctor.Location = new System.Drawing.Point(12, 122);
+            this.BtnCambiarEstadoCitaMenuDoctor.Name = "BtnCambiarEstadoCitaMenuDoctor";
+            this.BtnCambiarEstadoCitaMenuDoctor.Size = new System.Drawing.Size(132, 49);
+            this.BtnCambiarEstadoCitaMenuDoctor.TabIndex = 2;
+            this.BtnCambiarEstadoCitaMenuDoctor.Text = "Cambiar Estado De Cita";
+            this.BtnCambiarEstadoCitaMenuDoctor.UseVisualStyleBackColor = false;
             // 
-            // BtnAtenderCita
+            // BtnAtenderCitaMenuDoctor
             // 
-            this.BtnAtenderCita.BackColor = System.Drawing.Color.Lime;
-            this.BtnAtenderCita.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAtenderCita.Location = new System.Drawing.Point(12, 177);
-            this.BtnAtenderCita.Name = "BtnAtenderCita";
-            this.BtnAtenderCita.Size = new System.Drawing.Size(132, 49);
-            this.BtnAtenderCita.TabIndex = 3;
-            this.BtnAtenderCita.Text = "Atender Cita";
-            this.BtnAtenderCita.UseVisualStyleBackColor = false;
+            this.BtnAtenderCitaMenuDoctor.BackColor = System.Drawing.Color.Lime;
+            this.BtnAtenderCitaMenuDoctor.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAtenderCitaMenuDoctor.Location = new System.Drawing.Point(12, 177);
+            this.BtnAtenderCitaMenuDoctor.Name = "BtnAtenderCitaMenuDoctor";
+            this.BtnAtenderCitaMenuDoctor.Size = new System.Drawing.Size(132, 49);
+            this.BtnAtenderCitaMenuDoctor.TabIndex = 3;
+            this.BtnAtenderCitaMenuDoctor.Text = "Atender Cita";
+            this.BtnAtenderCitaMenuDoctor.UseVisualStyleBackColor = false;
             // 
-            // BtnEjecutarReportes
+            // BtnEjecutarReportesMenuDoctor
             // 
-            this.BtnEjecutarReportes.BackColor = System.Drawing.Color.Lime;
-            this.BtnEjecutarReportes.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEjecutarReportes.Location = new System.Drawing.Point(12, 232);
-            this.BtnEjecutarReportes.Name = "BtnEjecutarReportes";
-            this.BtnEjecutarReportes.Size = new System.Drawing.Size(132, 49);
-            this.BtnEjecutarReportes.TabIndex = 4;
-            this.BtnEjecutarReportes.Text = "Ejecutar Reportes";
-            this.BtnEjecutarReportes.UseVisualStyleBackColor = false;
+            this.BtnEjecutarReportesMenuDoctor.BackColor = System.Drawing.Color.Lime;
+            this.BtnEjecutarReportesMenuDoctor.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEjecutarReportesMenuDoctor.Location = new System.Drawing.Point(12, 232);
+            this.BtnEjecutarReportesMenuDoctor.Name = "BtnEjecutarReportesMenuDoctor";
+            this.BtnEjecutarReportesMenuDoctor.Size = new System.Drawing.Size(132, 49);
+            this.BtnEjecutarReportesMenuDoctor.TabIndex = 4;
+            this.BtnEjecutarReportesMenuDoctor.Text = "Ejecutar Reportes";
+            this.BtnEjecutarReportesMenuDoctor.UseVisualStyleBackColor = false;
             // 
             // BtnAtrasMenuDoctor
             // 
@@ -102,18 +103,31 @@
             this.BtnAtrasMenuDoctor.Text = "ATRAS";
             this.BtnAtrasMenuDoctor.UseVisualStyleBackColor = false;
             // 
+            // BtnAyudaMenuDoctor
+            // 
+            this.BtnAyudaMenuDoctor.BackColor = System.Drawing.Color.Blue;
+            this.BtnAyudaMenuDoctor.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAyudaMenuDoctor.ForeColor = System.Drawing.Color.White;
+            this.BtnAyudaMenuDoctor.Location = new System.Drawing.Point(3, 514);
+            this.BtnAyudaMenuDoctor.Name = "BtnAyudaMenuDoctor";
+            this.BtnAyudaMenuDoctor.Size = new System.Drawing.Size(120, 35);
+            this.BtnAyudaMenuDoctor.TabIndex = 6;
+            this.BtnAyudaMenuDoctor.Text = "AYUDA";
+            this.BtnAyudaMenuDoctor.UseVisualStyleBackColor = false;
+            // 
             // MenuDoctor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PrograFinalBD.Properties.Resources._9290217_M_dico_de_dibujos_animados_que_asisten_a_un_joven_paciente_en_una_sala_de_hospital__Foto_de_archivo1;
             this.ClientSize = new System.Drawing.Size(584, 561);
+            this.Controls.Add(this.BtnAyudaMenuDoctor);
             this.Controls.Add(this.BtnAtrasMenuDoctor);
-            this.Controls.Add(this.BtnEjecutarReportes);
-            this.Controls.Add(this.BtnAtenderCita);
-            this.Controls.Add(this.BtnCambiarEstadoCita);
-            this.Controls.Add(this.BtnAsignarCita);
-            this.Controls.Add(this.BtnCancelarCita);
+            this.Controls.Add(this.BtnEjecutarReportesMenuDoctor);
+            this.Controls.Add(this.BtnAtenderCitaMenuDoctor);
+            this.Controls.Add(this.BtnCambiarEstadoCitaMenuDoctor);
+            this.Controls.Add(this.BtnAsignarCitaMenuDoctor);
+            this.Controls.Add(this.BtnCancelarCitaMenuDoctor);
             this.Name = "MenuDoctor";
             this.Text = "MenuDoctor";
             this.ResumeLayout(false);
@@ -122,11 +136,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button BtnCancelarCita;
-        private System.Windows.Forms.Button BtnAsignarCita;
-        private System.Windows.Forms.Button BtnCambiarEstadoCita;
-        private System.Windows.Forms.Button BtnAtenderCita;
-        private System.Windows.Forms.Button BtnEjecutarReportes;
+        private System.Windows.Forms.Button BtnCancelarCitaMenuDoctor;
+        private System.Windows.Forms.Button BtnAsignarCitaMenuDoctor;
+        private System.Windows.Forms.Button BtnCambiarEstadoCitaMenuDoctor;
+        private System.Windows.Forms.Button BtnAtenderCitaMenuDoctor;
+        private System.Windows.Forms.Button BtnEjecutarReportesMenuDoctor;
         private System.Windows.Forms.Button BtnAtrasMenuDoctor;
+        private System.Windows.Forms.Button BtnAyudaMenuDoctor;
     }
 }

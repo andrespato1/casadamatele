@@ -50,7 +50,7 @@
             // 
             // BtnAtrasVtnaMenuPaciente
             // 
-            this.BtnAtrasVtnaMenuPaciente.BackColor = System.Drawing.Color.DarkRed;
+            this.BtnAtrasVtnaMenuPaciente.BackColor = System.Drawing.Color.Red;
             this.BtnAtrasVtnaMenuPaciente.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAtrasVtnaMenuPaciente.Location = new System.Drawing.Point(462, 292);
             this.BtnAtrasVtnaMenuPaciente.Name = "BtnAtrasVtnaMenuPaciente";
@@ -112,13 +112,14 @@
             // 
             // BtnAyudaVtnMenuPaciente
             // 
-            this.BtnAyudaVtnMenuPaciente.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BtnAyudaVtnMenuPaciente.BackColor = System.Drawing.Color.Blue;
             this.BtnAyudaVtnMenuPaciente.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAyudaVtnMenuPaciente.ForeColor = System.Drawing.Color.White;
             this.BtnAyudaVtnMenuPaciente.Location = new System.Drawing.Point(11, 322);
             this.BtnAyudaVtnMenuPaciente.Name = "BtnAyudaVtnMenuPaciente";
             this.BtnAyudaVtnMenuPaciente.Size = new System.Drawing.Size(111, 40);
             this.BtnAyudaVtnMenuPaciente.TabIndex = 6;
-            this.BtnAyudaVtnMenuPaciente.Text = "Ayuda";
+            this.BtnAyudaVtnMenuPaciente.Text = "AYUDA";
             this.BtnAyudaVtnMenuPaciente.UseVisualStyleBackColor = false;
             this.BtnAyudaVtnMenuPaciente.Click += new System.EventHandler(this.BtnAyudaVtnMenuPaciente_Click);
             // 
