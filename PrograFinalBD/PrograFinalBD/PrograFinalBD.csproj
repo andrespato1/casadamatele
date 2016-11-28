@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Services" />
@@ -49,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="conexionBD.cs" />
     <Compile Include="CrearCentrosDeSalud.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,12 +68,6 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuFuncionario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuFuncionario.Designer.cs">
-      <DependentUpon>MenuFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuMaster.cs">
       <SubType>Form</SubType>
@@ -107,9 +103,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuFuncionario.resx">
-      <DependentUpon>MenuFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuMaster.resx">
       <DependentUpon>MenuMaster.cs</DependentUpon>

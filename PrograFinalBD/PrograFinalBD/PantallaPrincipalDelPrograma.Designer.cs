@@ -29,28 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.TxtUsuarioPantallaPrincipal = new System.Windows.Forms.TextBox();
+            this.TxtIdUsuarioPantallaPrincipal = new System.Windows.Forms.TextBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.TxtClavePantallaPrincipal = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnIngresarPantallaPrincipal = new System.Windows.Forms.Button();
             this.CbTiposUsuariosPantallaPrincipal = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
-            // TxtUsuarioPantallaPrincipal
+            // TxtIdUsuarioPantallaPrincipal
             // 
-            this.TxtUsuarioPantallaPrincipal.Location = new System.Drawing.Point(294, 120);
-            this.TxtUsuarioPantallaPrincipal.Name = "TxtUsuarioPantallaPrincipal";
-            this.TxtUsuarioPantallaPrincipal.Size = new System.Drawing.Size(92, 20);
-            this.TxtUsuarioPantallaPrincipal.TabIndex = 0;
-            // 
-            // TxtClavePantallaPrincipal
-            // 
-            this.TxtClavePantallaPrincipal.Location = new System.Drawing.Point(392, 120);
-            this.TxtClavePantallaPrincipal.Name = "TxtClavePantallaPrincipal";
-            this.TxtClavePantallaPrincipal.Size = new System.Drawing.Size(99, 20);
-            this.TxtClavePantallaPrincipal.TabIndex = 1;
+            this.TxtIdUsuarioPantallaPrincipal.Location = new System.Drawing.Point(313, 121);
+            this.TxtIdUsuarioPantallaPrincipal.Name = "TxtIdUsuarioPantallaPrincipal";
+            this.TxtIdUsuarioPantallaPrincipal.Size = new System.Drawing.Size(132, 20);
+            this.TxtIdUsuarioPantallaPrincipal.TabIndex = 0;
             // 
             // label1
             // 
@@ -59,9 +51,9 @@
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(177, 95);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(314, 22);
+            this.label1.Size = new System.Drawing.Size(268, 22);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Ingrese codigo de usuario y la contraseña";
+            this.label1.Text = "Ingrese la identificacion de usuario";
             // 
             // BtnIngresarPantallaPrincipal
             // 
@@ -80,12 +72,14 @@
             this.CbTiposUsuariosPantallaPrincipal.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CbTiposUsuariosPantallaPrincipal.FormattingEnabled = true;
             this.CbTiposUsuariosPantallaPrincipal.Items.AddRange(new object[] {
-            "Funcionario",
+            "Doctor(a)",
+            "Efermero(a)",
+            "Secretario(a)",
             "Paciente",
             "Especial"});
             this.CbTiposUsuariosPantallaPrincipal.Location = new System.Drawing.Point(181, 120);
             this.CbTiposUsuariosPantallaPrincipal.Name = "CbTiposUsuariosPantallaPrincipal";
-            this.CbTiposUsuariosPantallaPrincipal.Size = new System.Drawing.Size(107, 24);
+            this.CbTiposUsuariosPantallaPrincipal.Size = new System.Drawing.Size(126, 24);
             this.CbTiposUsuariosPantallaPrincipal.TabIndex = 4;
             // 
             // PantallaPrincipalDelPrograma
@@ -97,8 +91,7 @@
             this.Controls.Add(this.CbTiposUsuariosPantallaPrincipal);
             this.Controls.Add(this.BtnIngresarPantallaPrincipal);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TxtClavePantallaPrincipal);
-            this.Controls.Add(this.TxtUsuarioPantallaPrincipal);
+            this.Controls.Add(this.TxtIdUsuarioPantallaPrincipal);
             this.Name = "PantallaPrincipalDelPrograma";
             this.Text = "PantallaPrincipalDelPrograma";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
@@ -109,9 +102,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox TxtUsuarioPantallaPrincipal;
+        private System.Windows.Forms.TextBox TxtIdUsuarioPantallaPrincipal;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.TextBox TxtClavePantallaPrincipal;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnIngresarPantallaPrincipal;
         private System.Windows.Forms.ComboBox CbTiposUsuariosPantallaPrincipal;

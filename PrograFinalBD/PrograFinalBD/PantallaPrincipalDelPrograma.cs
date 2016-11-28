@@ -21,11 +21,8 @@ namespace PrograFinalBD
         {
             string condicion = CbTiposUsuariosPantallaPrincipal.Text;
 
-            if(condicion == "Funcionario")
+            if(condicion == "Doctor")
             {
-                MenuFuncionario nuevo = new PrograFinalBD.MenuFuncionario();
-                nuevo.Show();
-                Hide();
 
             }else if (condicion == "Paciente")
             {
