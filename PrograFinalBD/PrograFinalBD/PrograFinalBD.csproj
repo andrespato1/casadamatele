@@ -93,6 +93,12 @@
     <Compile Include="MenuPaciente.Designer.cs">
       <DependentUpon>MenuPaciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuSecretaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuSecretaria.Designer.cs">
+      <DependentUpon>MenuSecretaria.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaPrincipalDelPrograma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPaciente.resx">
       <DependentUpon>MenuPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSecretaria.resx">
+      <DependentUpon>MenuSecretaria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaPrincipalDelPrograma.resx">
       <DependentUpon>PantallaPrincipalDelPrograma.cs</DependentUpon>
