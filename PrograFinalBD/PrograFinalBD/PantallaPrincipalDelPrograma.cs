@@ -12,6 +12,7 @@ namespace PrograFinalBD
 {
     public partial class PantallaPrincipalDelPrograma : Form
     {
+        conexionBD a = new conexionBD();
         public PantallaPrincipalDelPrograma()
         {
             InitializeComponent();
