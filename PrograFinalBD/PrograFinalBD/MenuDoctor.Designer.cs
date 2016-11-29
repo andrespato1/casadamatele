@@ -102,6 +102,7 @@
             this.BtnAtrasMenuDoctor.TabIndex = 5;
             this.BtnAtrasMenuDoctor.Text = "ATRAS";
             this.BtnAtrasMenuDoctor.UseVisualStyleBackColor = false;
+            this.BtnAtrasMenuDoctor.Click += new System.EventHandler(this.BtnAtrasMenuDoctor_Click);
             // 
             // BtnAyudaMenuDoctor
             // 

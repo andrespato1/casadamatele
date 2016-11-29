@@ -21,5 +21,12 @@ namespace PrograFinalBD
         {
 
         }
+
+        private void BtnAtrasMenuEnfermero_Click(object sender, EventArgs e)
+        {
+            PantallaPrincipalDelPrograma nuevo = new PrograFinalBD.PantallaPrincipalDelPrograma();
+            nuevo.Show();
+            Hide();
+        }
     }
 }

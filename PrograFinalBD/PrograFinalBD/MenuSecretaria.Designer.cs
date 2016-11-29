@@ -68,6 +68,7 @@
             this.BtnAtras.TabIndex = 2;
             this.BtnAtras.Text = "ATRAS";
             this.BtnAtras.UseVisualStyleBackColor = false;
+            this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
             // 
             // MenuSecretaria
             // 

@@ -16,5 +16,12 @@ namespace PrograFinalBD
         {
             InitializeComponent();
         }
+
+        private void BtnAtrasMenuDoctor_Click(object sender, EventArgs e)
+        {
+            PantallaPrincipalDelPrograma nuevo = new PrograFinalBD.PantallaPrincipalDelPrograma();
+            nuevo.Show();
+            Hide();
+        }
     }
 }

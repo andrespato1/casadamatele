@@ -102,6 +102,7 @@
             this.BtnAtrasMenuEnfermero.TabIndex = 5;
             this.BtnAtrasMenuEnfermero.Text = "ATRAS";
             this.BtnAtrasMenuEnfermero.UseVisualStyleBackColor = false;
+            this.BtnAtrasMenuEnfermero.Click += new System.EventHandler(this.BtnAtrasMenuEnfermero_Click);
             // 
             // MenuEnfermero
             // 
