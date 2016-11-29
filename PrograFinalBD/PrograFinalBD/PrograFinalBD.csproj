@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CancelarCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelarCitas.Designer.cs">
+      <DependentUpon>CancelarCitas.cs</DependentUpon>
+    </Compile>
     <Compile Include="conexionBD.cs" />
     <Compile Include="CrearCentrosDeSalud.cs">
       <SubType>Form</SubType>
@@ -113,6 +119,9 @@
     <Compile Include="ReporteTratamientosCliente.Designer.cs">
       <DependentUpon>ReporteTratamientosCliente.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CancelarCitas.resx">
+      <DependentUpon>CancelarCitas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrearCentrosDeSalud.resx">
       <DependentUpon>CrearCentrosDeSalud.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +190,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\app-health.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelling-an-it-project-100413129-primary.idge.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

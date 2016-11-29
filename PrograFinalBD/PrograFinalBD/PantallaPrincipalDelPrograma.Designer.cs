@@ -94,6 +94,7 @@
             this.Controls.Add(this.TxtIdUsuarioPantallaPrincipal);
             this.Name = "PantallaPrincipalDelPrograma";
             this.Text = "PantallaPrincipalDelPrograma";
+            this.Load += new System.EventHandler(this.PantallaPrincipalDelPrograma_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

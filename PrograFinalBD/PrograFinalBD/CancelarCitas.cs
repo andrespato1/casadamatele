@@ -10,50 +10,42 @@ using System.Windows.Forms;
 
 namespace PrograFinalBD
 {
-    public partial class PantallaPrincipalDelPrograma : Form
+    public partial class CancelarCitas : Form
     {
-        conexionBD a = new conexionBD();
-        public PantallaPrincipalDelPrograma()
+        String ventanaDeRetorno;
+        public CancelarCitas(String Ventana)
         {
+            ventanaDeRetorno = Ventana;
             InitializeComponent();
         }
 
-        private void BtnIngresarPantallaPrincipal_Click(object sender, EventArgs e)
+        private void BtnAtras_Click(object sender, EventArgs e)
         {
-            string condicion = CbTiposUsuariosPantallaPrincipal.Text;
-
-            if(condicion == "Doctor(a)")
+            if (ventanaDeRetorno == "Doc")
             {
                 MenuDoctor nuevo = new PrograFinalBD.MenuDoctor();
                 nuevo.Show();
                 Hide();
-
-            }else if (condicion == "Enfermero(a)")
+            }
+            else if (ventanaDeRetorno == "Enf")
             {
                 MenuEnfermero nuevo = new PrograFinalBD.MenuEnfermero();
                 nuevo.Show();
                 Hide();
-            }else if (condicion == "Secretario(a)")
+            }
+            else if (ventanaDeRetorno == "Sec")
             {
                 MenuSecretaria nuevo = new PrograFinalBD.MenuSecretaria();
                 nuevo.Show();
                 Hide();
-            }else if (condicion == "Paciente")
+            }
+            else if (ventanaDeRetorno == "Pac")
             {
                 MenuPaciente nuevo = new PrograFinalBD.MenuPaciente();
                 nuevo.Show();
                 Hide();
             }
-            else if (condicion == "Especial")
-            {
-                MenuMaster nuevo = new PrograFinalBD.MenuMaster();
-                nuevo.Show();
-                Hide();
-            }
-        }
 
-        private void PantallaPrincipalDelPrograma_Load(object sender, EventArgs e)
-        {
 
         }
     }

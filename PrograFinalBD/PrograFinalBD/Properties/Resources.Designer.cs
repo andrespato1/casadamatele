@@ -95,6 +95,16 @@ namespace PrograFinalBD.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancelling_an_it_project_100413129_primary_idge {
+            get {
+                object obj = ResourceManager.GetObject("cancelling-an-it-project-100413129-primary.idge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap depositphotos_7229389_stock_illustration_computer_repair_service {
             get {
                 object obj = ResourceManager.GetObject("depositphotos_7229389-stock-illustration-computer-repair-service", resourceCulture);
