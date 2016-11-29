@@ -53,10 +53,25 @@ namespace PrograFinalBD
         {
             abrirConexion();
             string deleteQuery = "delete from " + tabla + " where " + columna + " = " + condicionWhere;
-            MessageBox.Show(deleteQuery, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             MySqlCommand comandoEjecutar = new MySqlCommand(deleteQuery, conexionBaseDatos);
             int resultado = comandoEjecutar.ExecuteNonQuery();
             cerrarConexion();
+        }
+
+        public int validaciones(DataGridView ventana, string tabla, string columna, string condicion)
+        {
+            abrirConexion();
+            System.Data.DataSet dataSet = new System.Data.DataSet();
+            string selectQuery;
+            selectQuery = "select * from " + tabla + " where " + condicion;
+            
+            MySqlDataAdapter MiDataAdapter = new MySqlDataAdapter(selectQuery, conexionBaseDatos);
+            MiDataAdapter.Fill(dataSet, columna);
+            ventana.DataSource = dataSet;
+            ventana.DataMember = columna;
+            cerrarConexion();
+            int resultado = ventana.RowCount;
+            return resultado;
         }
 
         /*

@@ -34,7 +34,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BtnIngresarPantallaPrincipal = new System.Windows.Forms.Button();
             this.CbTiposUsuariosPantallaPrincipal = new System.Windows.Forms.ComboBox();
+            this.DataGridUsuarios = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtIdUsuarioPantallaPrincipal
@@ -76,11 +78,19 @@
             "Enfermero(a)",
             "Secretario(a)",
             "Paciente",
-            "Especial"});
+            "Administrador(a)"});
             this.CbTiposUsuariosPantallaPrincipal.Location = new System.Drawing.Point(181, 120);
             this.CbTiposUsuariosPantallaPrincipal.Name = "CbTiposUsuariosPantallaPrincipal";
             this.CbTiposUsuariosPantallaPrincipal.Size = new System.Drawing.Size(126, 24);
             this.CbTiposUsuariosPantallaPrincipal.TabIndex = 4;
+            // 
+            // DataGridUsuarios
+            // 
+            this.DataGridUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridUsuarios.Location = new System.Drawing.Point(324, 262);
+            this.DataGridUsuarios.Name = "DataGridUsuarios";
+            this.DataGridUsuarios.Size = new System.Drawing.Size(10, 10);
+            this.DataGridUsuarios.TabIndex = 5;
             // 
             // PantallaPrincipalDelPrograma
             // 
@@ -88,6 +98,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PrograFinalBD.Properties.Resources.elementos_graficos_de_medicina_23_2147490516;
             this.ClientSize = new System.Drawing.Size(628, 271);
+            this.Controls.Add(this.DataGridUsuarios);
             this.Controls.Add(this.CbTiposUsuariosPantallaPrincipal);
             this.Controls.Add(this.BtnIngresarPantallaPrincipal);
             this.Controls.Add(this.label1);
@@ -96,6 +107,7 @@
             this.Text = "PantallaPrincipalDelPrograma";
             this.Load += new System.EventHandler(this.PantallaPrincipalDelPrograma_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridUsuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,5 +120,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnIngresarPantallaPrincipal;
         private System.Windows.Forms.ComboBox CbTiposUsuariosPantallaPrincipal;
+        private System.Windows.Forms.DataGridView DataGridUsuarios;
     }
 }
