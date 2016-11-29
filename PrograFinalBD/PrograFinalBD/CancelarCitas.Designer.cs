@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DataGridCancelarCitas = new System.Windows.Forms.DataGridView();
             this.BtnCancelarCita = new System.Windows.Forms.Button();
             this.TextIdCancelar = new System.Windows.Forms.TextBox();
             this.BtnAtras = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridCancelarCitas)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // DataGridCancelarCitas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(390, 237);
-            this.dataGridView1.TabIndex = 0;
+            this.DataGridCancelarCitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridCancelarCitas.Location = new System.Drawing.Point(12, 12);
+            this.DataGridCancelarCitas.Name = "DataGridCancelarCitas";
+            this.DataGridCancelarCitas.Size = new System.Drawing.Size(390, 237);
+            this.DataGridCancelarCitas.TabIndex = 0;
             // 
             // BtnCancelarCita
             // 
@@ -61,7 +61,6 @@
             this.TextIdCancelar.Name = "TextIdCancelar";
             this.TextIdCancelar.Size = new System.Drawing.Size(124, 20);
             this.TextIdCancelar.TabIndex = 2;
-            this.TextIdCancelar.Text = "Ingresar Id Cita";
             // 
             // BtnAtras
             // 
@@ -85,10 +84,11 @@
             this.Controls.Add(this.BtnAtras);
             this.Controls.Add(this.TextIdCancelar);
             this.Controls.Add(this.BtnCancelarCita);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DataGridCancelarCitas);
             this.Name = "CancelarCitas";
             this.Text = "CancelarCitas";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.CancelarCitas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridCancelarCitas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,7 +96,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DataGridCancelarCitas;
         private System.Windows.Forms.Button BtnCancelarCita;
         private System.Windows.Forms.TextBox TextIdCancelar;
         private System.Windows.Forms.Button BtnAtras;

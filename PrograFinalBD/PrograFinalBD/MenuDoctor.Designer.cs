@@ -47,6 +47,7 @@
             this.BtnCancelarCitaMenuDoctor.TabIndex = 0;
             this.BtnCancelarCitaMenuDoctor.Text = "Cancelar Cita";
             this.BtnCancelarCitaMenuDoctor.UseVisualStyleBackColor = false;
+            this.BtnCancelarCitaMenuDoctor.Click += new System.EventHandler(this.BtnCancelarCitaMenuDoctor_Click);
             // 
             // BtnAsignarCitaMenuDoctor
             // 

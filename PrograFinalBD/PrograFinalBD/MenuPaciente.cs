@@ -14,6 +14,7 @@ namespace PrograFinalBD
 {
     public partial class MenuPaciente : Form
     {
+        string cedula = "";
         public MenuPaciente()
         {
             InitializeComponent();
@@ -45,6 +46,19 @@ namespace PrograFinalBD
         private void BtnDiagnosticosVtnaMenuPaciente_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnSacarCitaVtnMenuPaciente_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCancelarCitaVtnaMenuPaciente_Click(object sender, EventArgs e)
+        {
+            CancelarCitas nuevo = new PrograFinalBD.CancelarCitas("Pac");
+            nuevo.ced_paciente = cedula;
+            nuevo.Show();
+            Hide();
         }
     }
 }

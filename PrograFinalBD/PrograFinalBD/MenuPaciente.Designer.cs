@@ -71,6 +71,7 @@
             this.BtnSacarCitaVtnMenuPaciente.TabIndex = 2;
             this.BtnSacarCitaVtnMenuPaciente.Text = "Sacar Cita";
             this.BtnSacarCitaVtnMenuPaciente.UseVisualStyleBackColor = false;
+            this.BtnSacarCitaVtnMenuPaciente.Click += new System.EventHandler(this.BtnSacarCitaVtnMenuPaciente_Click);
             // 
             // BtnCancelarCitaVtnaMenuPaciente
             // 
@@ -83,6 +84,7 @@
             this.BtnCancelarCitaVtnaMenuPaciente.TabIndex = 3;
             this.BtnCancelarCitaVtnaMenuPaciente.Text = "Cancelar Cita";
             this.BtnCancelarCitaVtnaMenuPaciente.UseVisualStyleBackColor = false;
+            this.BtnCancelarCitaVtnaMenuPaciente.Click += new System.EventHandler(this.BtnCancelarCitaVtnaMenuPaciente_Click);
             // 
             // BtnDiagnosticosVtnaMenuPaciente
             // 

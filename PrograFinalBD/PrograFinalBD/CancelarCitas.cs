@@ -12,8 +12,9 @@ namespace PrograFinalBD
 {
     public partial class CancelarCitas : Form
     {
-        String ventanaDeRetorno;
-        public CancelarCitas(String Ventana)
+        string ventanaDeRetorno;
+        public string ced_paciente = "";
+        public CancelarCitas(string Ventana)
         {
             ventanaDeRetorno = Ventana;
             InitializeComponent();
@@ -47,6 +48,19 @@ namespace PrograFinalBD
             }
 
 
+        }
+
+        private void CancelarCitas_Load(object sender, EventArgs e)
+        {
+            if (ventanaDeRetorno == "Pac")
+            {
+                conexionBD nuevaConexion = new PrograFinalBD.conexionBD();
+                nuevaConexion.seleccionarValoresBaseDatosTodasLasTablas(DataGridCancelarCitas, "pacienteSolicitaCita", "cedula", ced_paciente);
+            }
+            else {
+                conexionBD nuevaConexion = new PrograFinalBD.conexionBD();
+                nuevaConexion.seleccionarValoresBaseDatosTodasLasTablas(DataGridCancelarCitas, "cita", "numeroCita", "");
+            }
         }
     }
 }

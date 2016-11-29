@@ -44,6 +44,7 @@
             this.BtnCancelarCita.TabIndex = 0;
             this.BtnCancelarCita.Text = "Cancelar Cita";
             this.BtnCancelarCita.UseVisualStyleBackColor = false;
+            this.BtnCancelarCita.Click += new System.EventHandler(this.BtnCancelarCita_Click);
             // 
             // BtnAyuda
             // 

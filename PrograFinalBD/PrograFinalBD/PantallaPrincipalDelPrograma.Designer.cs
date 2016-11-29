@@ -73,7 +73,7 @@
             this.CbTiposUsuariosPantallaPrincipal.FormattingEnabled = true;
             this.CbTiposUsuariosPantallaPrincipal.Items.AddRange(new object[] {
             "Doctor(a)",
-            "Efermero(a)",
+            "Enfermero(a)",
             "Secretario(a)",
             "Paciente",
             "Especial"});

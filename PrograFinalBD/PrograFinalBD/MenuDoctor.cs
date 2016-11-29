@@ -23,5 +23,13 @@ namespace PrograFinalBD
             nuevo.Show();
             Hide();
         }
+
+        private void BtnCancelarCitaMenuDoctor_Click(object sender, EventArgs e)
+        {
+            CancelarCitas nuevo = new PrograFinalBD.CancelarCitas("Doc");
+            nuevo.Show();
+            Hide();
+
+        }
     }
 }

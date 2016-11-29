@@ -28,5 +28,12 @@ namespace PrograFinalBD
             nuevo.Show();
             Hide();
         }
+
+        private void BtnCancelarCitaMenuEnfermero_Click(object sender, EventArgs e)
+        {
+            CancelarCitas nuevo = new CancelarCitas("Enf");
+            nuevo.Show();
+            Hide();
+        }
     }
 }

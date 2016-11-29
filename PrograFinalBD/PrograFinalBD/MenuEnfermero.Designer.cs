@@ -46,6 +46,7 @@
             this.BtnCancelarCitaMenuEnfermero.TabIndex = 0;
             this.BtnCancelarCitaMenuEnfermero.Text = "Cancelar Cita";
             this.BtnCancelarCitaMenuEnfermero.UseVisualStyleBackColor = false;
+            this.BtnCancelarCitaMenuEnfermero.Click += new System.EventHandler(this.BtnCancelarCitaMenuEnfermero_Click);
             // 
             // BtnAsignarCitaMenuEnfermero
             // 
