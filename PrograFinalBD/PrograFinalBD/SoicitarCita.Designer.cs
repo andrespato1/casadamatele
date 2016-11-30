@@ -31,8 +31,8 @@
             this.TxtEstado = new System.Windows.Forms.TextBox();
             this.TxtObservaciones = new System.Windows.Forms.TextBox();
             this.TxtHora = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.TxtCedula = new System.Windows.Forms.TextBox();
+            this.TxtNomArea = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.BtnGenerarCita = new System.Windows.Forms.Button();
             this.BtnAtras = new System.Windows.Forms.Button();
@@ -44,6 +44,11 @@
             this.TxtFecha = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TxtNumCita = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtEstado
@@ -67,19 +72,19 @@
             this.TxtHora.Size = new System.Drawing.Size(100, 20);
             this.TxtHora.TabIndex = 2;
             // 
-            // textBox4
+            // TxtCedula
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 288);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 5;
+            this.TxtCedula.Location = new System.Drawing.Point(12, 288);
+            this.TxtCedula.Name = "TxtCedula";
+            this.TxtCedula.Size = new System.Drawing.Size(100, 20);
+            this.TxtCedula.TabIndex = 5;
             // 
-            // textBox5
+            // TxtNomArea
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 240);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 4;
+            this.TxtNomArea.Location = new System.Drawing.Point(12, 240);
+            this.TxtNomArea.Name = "TxtNomArea";
+            this.TxtNomArea.Size = new System.Drawing.Size(100, 20);
+            this.TxtNomArea.TabIndex = 4;
             // 
             // textBox6
             // 
@@ -99,12 +104,13 @@
             this.BtnGenerarCita.TabIndex = 7;
             this.BtnGenerarCita.Text = "Registrar Cita";
             this.BtnGenerarCita.UseVisualStyleBackColor = false;
+            this.BtnGenerarCita.Click += new System.EventHandler(this.BtnGenerarCita_Click);
             // 
             // BtnAtras
             // 
             this.BtnAtras.BackColor = System.Drawing.Color.Red;
             this.BtnAtras.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAtras.Location = new System.Drawing.Point(472, 8);
+            this.BtnAtras.Location = new System.Drawing.Point(472, 501);
             this.BtnAtras.Name = "BtnAtras";
             this.BtnAtras.Size = new System.Drawing.Size(100, 48);
             this.BtnAtras.TabIndex = 8;
@@ -117,7 +123,7 @@
             this.BtnAyuda.BackColor = System.Drawing.Color.Blue;
             this.BtnAyuda.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAyuda.ForeColor = System.Drawing.Color.White;
-            this.BtnAyuda.Location = new System.Drawing.Point(366, 8);
+            this.BtnAyuda.Location = new System.Drawing.Point(366, 501);
             this.BtnAyuda.Name = "BtnAyuda";
             this.BtnAyuda.Size = new System.Drawing.Size(100, 48);
             this.BtnAyuda.TabIndex = 9;
@@ -204,12 +210,55 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Cedula";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(132, 13);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(101, 18);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Numero de cita";
+            // 
+            // TxtNumCita
+            // 
+            this.TxtNumCita.Location = new System.Drawing.Point(132, 36);
+            this.TxtNumCita.Name = "TxtNumCita";
+            this.TxtNumCita.Size = new System.Drawing.Size(100, 20);
+            this.TxtNumCita.TabIndex = 17;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(239, 36);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(81, 67);
+            this.dataGridView1.TabIndex = 19;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(239, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(166, 18);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Numero de cita asignados";
+            // 
             // SoicitarCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PrograFinalBD.Properties.Resources._9290217_M_dico_de_dibujos_animados_que_asisten_a_un_joven_paciente_en_una_sala_de_hospital__Foto_de_archivo1;
             this.ClientSize = new System.Drawing.Size(584, 561);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.TxtNumCita);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.TxtFecha);
@@ -220,14 +269,16 @@
             this.Controls.Add(this.BtnAyuda);
             this.Controls.Add(this.BtnAtras);
             this.Controls.Add(this.BtnGenerarCita);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.TxtCedula);
+            this.Controls.Add(this.TxtNomArea);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.TxtHora);
             this.Controls.Add(this.TxtObservaciones);
             this.Controls.Add(this.TxtEstado);
             this.Name = "SoicitarCita";
             this.Text = "SoicitarCita";
+            this.Load += new System.EventHandler(this.SoicitarCita_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,8 +289,8 @@
         private System.Windows.Forms.TextBox TxtEstado;
         private System.Windows.Forms.TextBox TxtObservaciones;
         private System.Windows.Forms.TextBox TxtHora;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox TxtCedula;
+        private System.Windows.Forms.TextBox TxtNomArea;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button BtnGenerarCita;
         private System.Windows.Forms.Button BtnAtras;
@@ -251,5 +302,9 @@
         private System.Windows.Forms.Label TxtFecha;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox TxtNumCita;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label8;
     }
 }
