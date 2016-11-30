@@ -38,5 +38,12 @@ namespace PrograFinalBD
             nueva.Show();
             Hide();
         }
+
+        private void BtnCambiarEstadoCitaMenuDoctor_Click(object sender, EventArgs e)
+        {
+            CambiarEstadoCita nuevo = new PrograFinalBD.CambiarEstadoCita();
+            nuevo.Show();
+            Hide();
+        }
     }
 }

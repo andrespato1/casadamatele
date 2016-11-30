@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CambiarEstadoCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarEstadoCita.Designer.cs">
+      <DependentUpon>CambiarEstadoCita.cs</DependentUpon>
+    </Compile>
     <Compile Include="CancelarCitas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     <Compile Include="SoicitarCita.Designer.cs">
       <DependentUpon>SoicitarCita.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CambiarEstadoCita.resx">
+      <DependentUpon>CambiarEstadoCita.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CancelarCitas.resx">
       <DependentUpon>CancelarCitas.cs</DependentUpon>
     </EmbeddedResource>

@@ -142,6 +142,24 @@ namespace PrograFinalBD
             }
         }
 
+        public void seleccionarconjoin(DataGridView ventana, string tabla, string columna, string query)
+        {
+            try
+            {
+                abrirConexion();
+                System.Data.DataSet dataSet = new System.Data.DataSet();
+                string selectQuery= query;
+                MySqlDataAdapter MiDataAdapter = new MySqlDataAdapter(selectQuery, conexionBaseDatos);
+                MiDataAdapter.Fill(dataSet, columna);
+                ventana.DataSource = dataSet;
+                ventana.DataMember = columna;
+                cerrarConexion();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al seleccion valores en la base de datos :" + ex.Message, "Error de ejecucion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         /*
          * comando que realiza los select de la base de datos 
          * desde c#

@@ -71,6 +71,7 @@
             this.BtnCambiarEstadoCitaMenuDoctor.TabIndex = 2;
             this.BtnCambiarEstadoCitaMenuDoctor.Text = "Cambiar Estado De Cita";
             this.BtnCambiarEstadoCitaMenuDoctor.UseVisualStyleBackColor = false;
+            this.BtnCambiarEstadoCitaMenuDoctor.Click += new System.EventHandler(this.BtnCambiarEstadoCitaMenuDoctor_Click);
             // 
             // BtnAtenderCitaMenuDoctor
             // 
