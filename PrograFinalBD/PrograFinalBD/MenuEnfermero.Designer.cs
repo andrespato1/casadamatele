@@ -58,6 +58,7 @@
             this.BtnAsignarCitaMenuEnfermero.TabIndex = 1;
             this.BtnAsignarCitaMenuEnfermero.Text = "Asignar Cita";
             this.BtnAsignarCitaMenuEnfermero.UseVisualStyleBackColor = false;
+            this.BtnAsignarCitaMenuEnfermero.Click += new System.EventHandler(this.BtnAsignarCitaMenuEnfermero_Click);
             // 
             // BtnCambiarEstadoCitaMenuEnfermero
             // 

@@ -35,5 +35,12 @@ namespace PrograFinalBD
             nuevo.Show();
             Hide();
         }
+
+        private void BtnAsignarCitaMenuEnfermero_Click(object sender, EventArgs e)
+        {
+            SoicitarCita nueva = new SoicitarCita("Enf");
+            nueva.Show();
+            Hide();
+        }
     }
 }

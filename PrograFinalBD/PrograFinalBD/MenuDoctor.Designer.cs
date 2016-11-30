@@ -59,6 +59,7 @@
             this.BtnAsignarCitaMenuDoctor.TabIndex = 1;
             this.BtnAsignarCitaMenuDoctor.Text = "Asignar Cita";
             this.BtnAsignarCitaMenuDoctor.UseVisualStyleBackColor = false;
+            this.BtnAsignarCitaMenuDoctor.Click += new System.EventHandler(this.BtnAsignarCitaMenuDoctor_Click);
             // 
             // BtnCambiarEstadoCitaMenuDoctor
             // 

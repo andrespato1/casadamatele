@@ -44,6 +44,7 @@ namespace PrograFinalBD
             else if (ventanaDeRetorno == "Pac")
             {
                 MenuPaciente nuevo = new PrograFinalBD.MenuPaciente();
+                nuevo.cedula = cedula_pacient;
                 nuevo.Show();
                 Hide();
             }

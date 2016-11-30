@@ -31,5 +31,12 @@ namespace PrograFinalBD
             Hide();
 
         }
+
+        private void BtnAsignarCitaMenuDoctor_Click(object sender, EventArgs e)
+        {
+            SoicitarCita nueva = new SoicitarCita("Doc");
+            nueva.Show();
+            Hide();
+        }
     }
 }
