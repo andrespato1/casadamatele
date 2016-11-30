@@ -10,17 +10,25 @@ namespace PrograFinalBD
 {
     class conexionBD
     {
-        MySqlConnection conexionBaseDatos = new MySqlConnection();
-        string usuario = "root";
-        string contraseña = "jorge125";
+        MySqlConnection conexionBaseDatos;
 
-        public conexionBD () {
+        public conexionBD()
+        {
+            conexionBaseDatos = new MySqlConnection();
             conexionBaseDatos.ConnectionString = "server=localhost;user id=root;password=jorge125;database=centromedico";
         }
 
         public void abrirConexion()
         {
-            conexionBaseDatos.Open();
+            try
+            {
+                conexionBaseDatos.Open();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al conectar con el servidor de la Base de Datos :" + ex.Message, "Error de conexion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         /*
@@ -29,7 +37,14 @@ namespace PrograFinalBD
          */
         public void cerrarConexion()
         {
-            conexionBaseDatos.Close();
+            try
+            {
+                conexionBaseDatos.Close();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al cerrar la conexion con el servidor de la Base de Datos :" + ex.Message, "Error de conexion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         /*
@@ -38,11 +53,18 @@ namespace PrograFinalBD
          */
         public void actualizarValoresBaseDatos(string query, string columna, string condicionWhere)
         {
-            abrirConexion();
-            string updateQuery = query + " where " + columna + " = " + condicionWhere;
-            MySqlCommand comandoEjecutar = new MySqlCommand(updateQuery, conexionBaseDatos);
-            int resultado = comandoEjecutar.ExecuteNonQuery();
-            cerrarConexion();
+            try
+            {
+                abrirConexion();
+                string updateQuery = query + " where " + columna + " = " + condicionWhere;
+                MySqlCommand comandoEjecutar = new MySqlCommand(updateQuery, conexionBaseDatos);
+                int resultado = comandoEjecutar.ExecuteNonQuery();
+                cerrarConexion();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al insertar valores en la base de datos :" + ex.Message, "Error de ejecucion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         /*
@@ -51,27 +73,42 @@ namespace PrograFinalBD
          */
         public void eliminarValoresBaseDatos(string tabla, string columna, string condicionWhere)
         {
-            abrirConexion();
-            string deleteQuery = "delete from " + tabla + " where " + columna + " = " + condicionWhere;
-            MySqlCommand comandoEjecutar = new MySqlCommand(deleteQuery, conexionBaseDatos);
-            int resultado = comandoEjecutar.ExecuteNonQuery();
-            cerrarConexion();
+            try
+            {
+                abrirConexion();
+                string deleteQuery = "delete from " + tabla + " where " + columna + " = " + condicionWhere;
+                MySqlCommand comandoEjecutar = new MySqlCommand(deleteQuery, conexionBaseDatos);
+                int resultado = comandoEjecutar.ExecuteNonQuery();
+                cerrarConexion();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al eliminar valores en la base de datos :" + ex.Message, "Error de ejecucion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         public int validaciones(DataGridView ventana, string tabla, string columna, string condicion)
         {
-            abrirConexion();
-            System.Data.DataSet dataSet = new System.Data.DataSet();
-            string selectQuery;
-            selectQuery = "select * from " + tabla + " where " + condicion;
-            
-            MySqlDataAdapter MiDataAdapter = new MySqlDataAdapter(selectQuery, conexionBaseDatos);
-            MiDataAdapter.Fill(dataSet, columna);
-            ventana.DataSource = dataSet;
-            ventana.DataMember = columna;
-            cerrarConexion();
-            int resultado = ventana.RowCount;
-            return resultado;
+            try
+            {
+                abrirConexion();
+                System.Data.DataSet dataSet = new System.Data.DataSet();
+                string selectQuery;
+                selectQuery = "select * from " + tabla + " where " + condicion;
+
+                MySqlDataAdapter MiDataAdapter = new MySqlDataAdapter(selectQuery, conexionBaseDatos);
+                MiDataAdapter.Fill(dataSet, columna);
+                ventana.DataSource = dataSet;
+                ventana.DataMember = columna;
+                cerrarConexion();
+                int resultado = ventana.RowCount;
+                return resultado;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al validacion valores en la base de datos :" + ex.Message, "Error de ejecucion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return 0;
+            }
         }
 
         /*
@@ -80,22 +117,29 @@ namespace PrograFinalBD
          */
         public void seleccionarValoresBaseDatos(DataGridView ventana, string tabla, string columna, string condicion)
         {
-            abrirConexion();
-            System.Data.DataSet dataSet = new System.Data.DataSet();
-            string selectQuery;
-            if (condicion != "")
+            try
             {
-                selectQuery = "select " + columna + " from " + tabla + " where " + columna + " " + condicion;
+                abrirConexion();
+                System.Data.DataSet dataSet = new System.Data.DataSet();
+                string selectQuery;
+                if (condicion != "")
+                {
+                    selectQuery = "select " + columna + " from " + tabla + " where " + columna + " " + condicion;
+                }
+                else
+                {
+                    selectQuery = "select " + columna + " from " + tabla;
+                }
+                MySqlDataAdapter MiDataAdapter = new MySqlDataAdapter(selectQuery, conexionBaseDatos);
+                MiDataAdapter.Fill(dataSet, columna);
+                ventana.DataSource = dataSet;
+                ventana.DataMember = columna;
+                cerrarConexion();
             }
-            else
+            catch (MySqlException ex)
             {
-                selectQuery = "select " + columna + " from " + tabla;
+                MessageBox.Show("Error al seleccion valores en la base de datos :" + ex.Message, "Error de ejecucion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            MySqlDataAdapter MiDataAdapter = new MySqlDataAdapter(selectQuery, conexionBaseDatos);
-            MiDataAdapter.Fill(dataSet, columna);
-            ventana.DataSource = dataSet;
-            ventana.DataMember = columna;
-            cerrarConexion();
         }
 
         /*
@@ -104,22 +148,29 @@ namespace PrograFinalBD
          */
         public void seleccionarValoresBaseDatosTodasLasTablas(DataGridView ventana, string tabla, string columna, string condicion)
         {
-            abrirConexion();
-            System.Data.DataSet dataSet = new System.Data.DataSet();
-            string selectQuery;
-            if (condicion != "")
+            try
             {
-                selectQuery = "select * from " + tabla + " where " + columna + " " + condicion;
+                abrirConexion();
+                System.Data.DataSet dataSet = new System.Data.DataSet();
+                string selectQuery;
+                if (condicion != "")
+                {
+                    selectQuery = "select * from " + tabla + " where " + columna + " " + condicion;
+                }
+                else
+                {
+                    selectQuery = "select * from " + tabla;
+                }
+                MySqlDataAdapter MiDataAdapter = new MySqlDataAdapter(selectQuery, conexionBaseDatos);
+                MiDataAdapter.Fill(dataSet, columna);
+                ventana.DataSource = dataSet;
+                ventana.DataMember = columna;
+                cerrarConexion();
             }
-            else
+            catch (MySqlException ex)
             {
-                selectQuery = "select * from " + tabla;
+                MessageBox.Show("Error al seleccionar valores en la base de datos :" + ex.Message, "Error de ejecucion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            MySqlDataAdapter MiDataAdapter = new MySqlDataAdapter(selectQuery, conexionBaseDatos);
-            MiDataAdapter.Fill(dataSet, columna);
-            ventana.DataSource = dataSet;
-            ventana.DataMember = columna;
-            cerrarConexion();
         }
 
         /*
@@ -128,12 +179,19 @@ namespace PrograFinalBD
          */
         public void agregarValoresBaseDatos(string tabla, string datos)
         {
-            abrirConexion();
-            string updateQuery = "insert into " + tabla + " values (" + datos + ")";
-            MySqlCommand comandoEjecutar = new MySqlCommand(updateQuery, conexionBaseDatos);
-            MessageBox.Show(updateQuery, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            int resultado = comandoEjecutar.ExecuteNonQuery();
-            cerrarConexion();
+            try
+            {
+                abrirConexion();
+                string updateQuery = "insert into " + tabla + " values (" + datos + ")";
+                MySqlCommand comandoEjecutar = new MySqlCommand(updateQuery, conexionBaseDatos);
+                MessageBox.Show(updateQuery, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                int resultado = comandoEjecutar.ExecuteNonQuery();
+                cerrarConexion();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al agregar valores en la base de datos :" + ex.Message, "Error de ejecucion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
 
         }

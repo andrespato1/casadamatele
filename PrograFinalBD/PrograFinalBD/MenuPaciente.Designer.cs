@@ -130,7 +130,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PrograFinalBD.Properties.Resources._9290217_M_dico_de_dibujos_animados_que_asisten_a_un_joven_paciente_en_una_sala_de_hospital__Foto_de_archivo1;
-            this.ClientSize = new System.Drawing.Size(585, 374);
+            this.ClientSize = new System.Drawing.Size(584, 374);
             this.Controls.Add(this.BtnAyudaVtnMenuPaciente);
             this.Controls.Add(this.BtnTratamientoVtnaMenuPaciente);
             this.Controls.Add(this.BtnDiagnosticosVtnaMenuPaciente);

@@ -1,0 +1,255 @@
+﻿namespace PrograFinalBD
+{
+    partial class SoicitarCita
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.TxtEstado = new System.Windows.Forms.TextBox();
+            this.TxtObservaciones = new System.Windows.Forms.TextBox();
+            this.TxtHora = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.BtnGenerarCita = new System.Windows.Forms.Button();
+            this.BtnAtras = new System.Windows.Forms.Button();
+            this.BtnAyuda = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TxtFecha = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // TxtEstado
+            // 
+            this.TxtEstado.Location = new System.Drawing.Point(12, 36);
+            this.TxtEstado.Name = "TxtEstado";
+            this.TxtEstado.Size = new System.Drawing.Size(100, 20);
+            this.TxtEstado.TabIndex = 0;
+            // 
+            // TxtObservaciones
+            // 
+            this.TxtObservaciones.Location = new System.Drawing.Point(12, 87);
+            this.TxtObservaciones.Name = "TxtObservaciones";
+            this.TxtObservaciones.Size = new System.Drawing.Size(220, 20);
+            this.TxtObservaciones.TabIndex = 1;
+            // 
+            // TxtHora
+            // 
+            this.TxtHora.Location = new System.Drawing.Point(12, 135);
+            this.TxtHora.Name = "TxtHora";
+            this.TxtHora.Size = new System.Drawing.Size(100, 20);
+            this.TxtHora.TabIndex = 2;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(12, 288);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 5;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(12, 240);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 4;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(12, 189);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 3;
+            // 
+            // BtnGenerarCita
+            // 
+            this.BtnGenerarCita.BackColor = System.Drawing.Color.SpringGreen;
+            this.BtnGenerarCita.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGenerarCita.ForeColor = System.Drawing.Color.Indigo;
+            this.BtnGenerarCita.Location = new System.Drawing.Point(12, 331);
+            this.BtnGenerarCita.Name = "BtnGenerarCita";
+            this.BtnGenerarCita.Size = new System.Drawing.Size(100, 48);
+            this.BtnGenerarCita.TabIndex = 7;
+            this.BtnGenerarCita.Text = "Registrar Cita";
+            this.BtnGenerarCita.UseVisualStyleBackColor = false;
+            // 
+            // BtnAtras
+            // 
+            this.BtnAtras.BackColor = System.Drawing.Color.Red;
+            this.BtnAtras.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAtras.Location = new System.Drawing.Point(472, 8);
+            this.BtnAtras.Name = "BtnAtras";
+            this.BtnAtras.Size = new System.Drawing.Size(100, 48);
+            this.BtnAtras.TabIndex = 8;
+            this.BtnAtras.Text = "ATRAS";
+            this.BtnAtras.UseVisualStyleBackColor = false;
+            this.BtnAtras.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // BtnAyuda
+            // 
+            this.BtnAyuda.BackColor = System.Drawing.Color.Blue;
+            this.BtnAyuda.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAyuda.ForeColor = System.Drawing.Color.White;
+            this.BtnAyuda.Location = new System.Drawing.Point(366, 8);
+            this.BtnAyuda.Name = "BtnAyuda";
+            this.BtnAyuda.Size = new System.Drawing.Size(100, 48);
+            this.BtnAyuda.TabIndex = 9;
+            this.BtnAyuda.Text = "AYUDA";
+            this.BtnAyuda.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(12, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 18);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Estado de cita";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(13, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 18);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Observaciones";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(13, 114);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 18);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Hora de cita";
+            // 
+            // TxtFecha
+            // 
+            this.TxtFecha.AutoSize = true;
+            this.TxtFecha.BackColor = System.Drawing.Color.Transparent;
+            this.TxtFecha.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFecha.ForeColor = System.Drawing.Color.Black;
+            this.TxtFecha.Location = new System.Drawing.Point(12, 168);
+            this.TxtFecha.Name = "TxtFecha";
+            this.TxtFecha.Size = new System.Drawing.Size(86, 18);
+            this.TxtFecha.TabIndex = 14;
+            this.TxtFecha.Text = "Fecha de cita";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(13, 219);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(106, 18);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Nombre de area";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(13, 267);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 18);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Cedula";
+            // 
+            // SoicitarCita
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::PrograFinalBD.Properties.Resources._9290217_M_dico_de_dibujos_animados_que_asisten_a_un_joven_paciente_en_una_sala_de_hospital__Foto_de_archivo1;
+            this.ClientSize = new System.Drawing.Size(584, 561);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.TxtFecha);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.BtnAyuda);
+            this.Controls.Add(this.BtnAtras);
+            this.Controls.Add(this.BtnGenerarCita);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.TxtHora);
+            this.Controls.Add(this.TxtObservaciones);
+            this.Controls.Add(this.TxtEstado);
+            this.Name = "SoicitarCita";
+            this.Text = "SoicitarCita";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox TxtEstado;
+        private System.Windows.Forms.TextBox TxtObservaciones;
+        private System.Windows.Forms.TextBox TxtHora;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button BtnGenerarCita;
+        private System.Windows.Forms.Button BtnAtras;
+        private System.Windows.Forms.Button BtnAyuda;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label TxtFecha;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+    }
+}

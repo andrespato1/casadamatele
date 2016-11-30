@@ -119,6 +119,12 @@
     <Compile Include="ReporteTratamientosCliente.Designer.cs">
       <DependentUpon>ReporteTratamientosCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="SoicitarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoicitarCita.Designer.cs">
+      <DependentUpon>SoicitarCita.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CancelarCitas.resx">
       <DependentUpon>CancelarCitas.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +169,9 @@
       <DependentUpon>ReporteTratamientosCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportTratamientosCliente.rdlc" />
+    <EmbeddedResource Include="SoicitarCita.resx">
+      <DependentUpon>SoicitarCita.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
