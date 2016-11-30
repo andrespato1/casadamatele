@@ -56,6 +56,7 @@ namespace PrograFinalBD
                 if (resultado > 1)
                 {
                     MenuPaciente nuevo = new PrograFinalBD.MenuPaciente();
+                    nuevo.cedula = TxtIdUsuarioPantallaPrincipal.Text;
                     nuevo.Show();
                     Hide();
                 }

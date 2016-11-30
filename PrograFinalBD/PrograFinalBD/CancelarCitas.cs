@@ -43,6 +43,7 @@ namespace PrograFinalBD
             else if (ventanaDeRetorno == "Pac")
             {
                 MenuPaciente nuevo = new PrograFinalBD.MenuPaciente();
+                nuevo.cedula = ced_paciente;
                 nuevo.Show();
                 Hide();
             }
@@ -55,7 +56,7 @@ namespace PrograFinalBD
             if (ventanaDeRetorno == "Pac")
             {
                 conexionBD nuevaConexion = new PrograFinalBD.conexionBD();
-                nuevaConexion.seleccionarValoresBaseDatosTodasLasTablas(DataGridCancelarCitas, "pacienteSolicitaCita", "cedula", ced_paciente);
+                nuevaConexion.seleccionarValoresBaseDatosTodasLasTablas(DataGridCancelarCitas, "pacienteSolicitaCita", "cedula = ", ced_paciente);
             }
             else {
                 conexionBD nuevaConexion = new PrograFinalBD.conexionBD();

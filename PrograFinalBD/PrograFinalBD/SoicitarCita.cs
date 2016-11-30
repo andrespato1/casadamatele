@@ -14,7 +14,7 @@ namespace PrograFinalBD
     {
         string ventanaDeRetorno;
         conexionBD nuevaconexion = new conexionBD();
-        public string cedula;
+        public string cedula_pacient;
         public SoicitarCita(string ventana)
         {
             ventanaDeRetorno = ventana;
@@ -52,7 +52,7 @@ namespace PrograFinalBD
 
         private void SoicitarCita_Load(object sender, EventArgs e)
         {
-
+            nuevaconexion.seleccionarValoresBaseDatos(dataGridView1,"cita","numeroCita","");
         }
 
         private void BtnGenerarCita_Click(object sender, EventArgs e)
@@ -60,13 +60,18 @@ namespace PrograFinalBD
             if (ventanaDeRetorno == "Pac")
             {
                 nuevaconexion.agregarValoresBaseDatos("cita",TxtNumCita+",'"+TxtEstado+"','"+TxtObservaciones + "','"+TxtHora+"','"+TxtFecha + "','"+TxtNomArea + "',");
-                nuevaconexion.agregarValoresBaseDatos("pacientesolicitacita",cedula+","+TxtNumCita);
+                nuevaconexion.agregarValoresBaseDatos("pacientesolicitacita",cedula_pacient+","+TxtNumCita);
             }
             else
             {
                 nuevaconexion.agregarValoresBaseDatos("cita",TxtNumCita+ ",'" +TxtEstado + "','" + TxtObservaciones + "','" + TxtHora + "','" + TxtFecha + "','" + TxtNomArea + "',");
                 nuevaconexion.agregarValoresBaseDatos("pacientesolicitacita", TxtCedula + "," + TxtNumCita);
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

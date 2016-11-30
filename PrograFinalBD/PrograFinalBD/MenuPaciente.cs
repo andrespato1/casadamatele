@@ -14,7 +14,7 @@ namespace PrograFinalBD
 {
     public partial class MenuPaciente : Form
     {
-        string cedula = "";
+        public string cedula = "";
         public MenuPaciente()
         {
             InitializeComponent();
@@ -50,7 +50,10 @@ namespace PrograFinalBD
 
         private void BtnSacarCitaVtnMenuPaciente_Click(object sender, EventArgs e)
         {
-
+            SoicitarCita nueva = new SoicitarCita("Pac");
+            nueva.cedula_pacient = cedula;
+            nueva.Show();
+            Hide();
         }
 
         private void BtnCancelarCitaVtnaMenuPaciente_Click(object sender, EventArgs e)
