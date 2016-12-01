@@ -36,7 +36,6 @@
             this.txtFec = new System.Windows.Forms.TextBox();
             this.BtnGenerarCita = new System.Windows.Forms.Button();
             this.BtnAtras = new System.Windows.Forms.Button();
-            this.BtnAyuda = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -117,18 +116,6 @@
             this.BtnAtras.Text = "ATRAS";
             this.BtnAtras.UseVisualStyleBackColor = false;
             this.BtnAtras.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // BtnAyuda
-            // 
-            this.BtnAyuda.BackColor = System.Drawing.Color.Blue;
-            this.BtnAyuda.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAyuda.ForeColor = System.Drawing.Color.White;
-            this.BtnAyuda.Location = new System.Drawing.Point(366, 501);
-            this.BtnAyuda.Name = "BtnAyuda";
-            this.BtnAyuda.Size = new System.Drawing.Size(100, 48);
-            this.BtnAyuda.TabIndex = 9;
-            this.BtnAyuda.Text = "AYUDA";
-            this.BtnAyuda.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -267,7 +254,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.BtnAyuda);
             this.Controls.Add(this.BtnAtras);
             this.Controls.Add(this.BtnGenerarCita);
             this.Controls.Add(this.TxtCedula);
@@ -295,7 +281,6 @@
         private System.Windows.Forms.TextBox txtFec;
         private System.Windows.Forms.Button BtnGenerarCita;
         private System.Windows.Forms.Button BtnAtras;
-        private System.Windows.Forms.Button BtnAyuda;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
