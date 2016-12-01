@@ -31,6 +31,7 @@
             this.BtnCancelarCita = new System.Windows.Forms.Button();
             this.BtnAyuda = new System.Windows.Forms.Button();
             this.BtnAtras = new System.Windows.Forms.Button();
+            this.BtnAsignarCita = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnCancelarCita
@@ -71,12 +72,26 @@
             this.BtnAtras.UseVisualStyleBackColor = false;
             this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
             // 
+            // BtnAsignarCita
+            // 
+            this.BtnAsignarCita.BackColor = System.Drawing.Color.Indigo;
+            this.BtnAsignarCita.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAsignarCita.ForeColor = System.Drawing.Color.Transparent;
+            this.BtnAsignarCita.Location = new System.Drawing.Point(109, 12);
+            this.BtnAsignarCita.Name = "BtnAsignarCita";
+            this.BtnAsignarCita.Size = new System.Drawing.Size(91, 54);
+            this.BtnAsignarCita.TabIndex = 3;
+            this.BtnAsignarCita.Text = "Asignar Cita";
+            this.BtnAsignarCita.UseVisualStyleBackColor = false;
+            this.BtnAsignarCita.Click += new System.EventHandler(this.BtnAsignarCita_Click);
+            // 
             // MenuSecretaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PrograFinalBD.Properties.Resources._9290217_M_dico_de_dibujos_animados_que_asisten_a_un_joven_paciente_en_una_sala_de_hospital__Foto_de_archivo1;
             this.ClientSize = new System.Drawing.Size(584, 382);
+            this.Controls.Add(this.BtnAsignarCita);
             this.Controls.Add(this.BtnAtras);
             this.Controls.Add(this.BtnAyuda);
             this.Controls.Add(this.BtnCancelarCita);
@@ -91,5 +106,6 @@
         private System.Windows.Forms.Button BtnCancelarCita;
         private System.Windows.Forms.Button BtnAyuda;
         private System.Windows.Forms.Button BtnAtras;
+        private System.Windows.Forms.Button BtnAsignarCita;
     }
 }

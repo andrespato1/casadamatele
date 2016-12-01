@@ -30,5 +30,12 @@ namespace PrograFinalBD
             nuevo.Show();
             Hide();
         }
+
+        private void BtnAsignarCita_Click(object sender, EventArgs e)
+        {
+            SoicitarCita nueva = new PrograFinalBD.SoicitarCita("Sec");
+            nueva.Show();
+            Hide();
+        }
     }
 }

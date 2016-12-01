@@ -33,10 +33,9 @@
             this.TxtHora = new System.Windows.Forms.TextBox();
             this.TxtCedula = new System.Windows.Forms.TextBox();
             this.TxtNomArea = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtFec = new System.Windows.Forms.TextBox();
             this.BtnGenerarCita = new System.Windows.Forms.Button();
             this.BtnAtras = new System.Windows.Forms.Button();
-            this.BtnAyuda = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -86,12 +85,12 @@
             this.TxtNomArea.Size = new System.Drawing.Size(100, 20);
             this.TxtNomArea.TabIndex = 4;
             // 
-            // textBox6
+            // txtFec
             // 
-            this.textBox6.Location = new System.Drawing.Point(12, 189);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 3;
+            this.txtFec.Location = new System.Drawing.Point(12, 189);
+            this.txtFec.Name = "txtFec";
+            this.txtFec.Size = new System.Drawing.Size(100, 20);
+            this.txtFec.TabIndex = 3;
             // 
             // BtnGenerarCita
             // 
@@ -117,18 +116,6 @@
             this.BtnAtras.Text = "ATRAS";
             this.BtnAtras.UseVisualStyleBackColor = false;
             this.BtnAtras.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // BtnAyuda
-            // 
-            this.BtnAyuda.BackColor = System.Drawing.Color.Blue;
-            this.BtnAyuda.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAyuda.ForeColor = System.Drawing.Color.White;
-            this.BtnAyuda.Location = new System.Drawing.Point(366, 501);
-            this.BtnAyuda.Name = "BtnAyuda";
-            this.BtnAyuda.Size = new System.Drawing.Size(100, 48);
-            this.BtnAyuda.TabIndex = 9;
-            this.BtnAyuda.Text = "AYUDA";
-            this.BtnAyuda.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -267,12 +254,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.BtnAyuda);
             this.Controls.Add(this.BtnAtras);
             this.Controls.Add(this.BtnGenerarCita);
             this.Controls.Add(this.TxtCedula);
             this.Controls.Add(this.TxtNomArea);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtFec);
             this.Controls.Add(this.TxtHora);
             this.Controls.Add(this.TxtObservaciones);
             this.Controls.Add(this.TxtEstado);
@@ -292,10 +278,9 @@
         private System.Windows.Forms.TextBox TxtHora;
         private System.Windows.Forms.TextBox TxtCedula;
         private System.Windows.Forms.TextBox TxtNomArea;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtFec;
         private System.Windows.Forms.Button BtnGenerarCita;
         private System.Windows.Forms.Button BtnAtras;
-        private System.Windows.Forms.Button BtnAyuda;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

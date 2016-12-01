@@ -60,13 +60,13 @@ namespace PrograFinalBD
         {
             if (ventanaDeRetorno == "Pac")
             {
-                nuevaconexion.agregarValoresBaseDatos("cita",TxtNumCita+",'"+TxtEstado+"','"+TxtObservaciones + "','"+TxtHora+"','"+TxtFecha + "','"+TxtNomArea + "',");
-                nuevaconexion.agregarValoresBaseDatos("pacientesolicitacita",cedula_pacient+","+TxtNumCita);
+                nuevaconexion.agregarValoresBaseDatos("cita", TxtNumCita.Text + ",'" + TxtEstado.Text + "','" + TxtObservaciones.Text + "','" + TxtHora.Text + "','" + txtFec.Text + "','" + TxtNomArea.Text + "'");
+                nuevaconexion.agregarValoresBaseDatos("pacientesolicitacita", TxtNumCita.Text + "," + cedula_pacient);
             }
             else
             {
-                nuevaconexion.agregarValoresBaseDatos("cita",TxtNumCita+ ",'" +TxtEstado + "','" + TxtObservaciones + "','" + TxtHora + "','" + TxtFecha + "','" + TxtNomArea + "',");
-                nuevaconexion.agregarValoresBaseDatos("pacientesolicitacita", TxtCedula + "," + TxtNumCita);
+                nuevaconexion.agregarValoresBaseDatos("cita", TxtNumCita.Text + ",'" + TxtEstado.Text + "','" + TxtObservaciones.Text + "','" + TxtHora.Text + "','" + txtFec.Text + "','" + TxtNomArea.Text + "'");
+                nuevaconexion.agregarValoresBaseDatos("pacientesolicitacita", TxtNumCita.Text + "," + TxtCedula.Text);
             }
         }
 
