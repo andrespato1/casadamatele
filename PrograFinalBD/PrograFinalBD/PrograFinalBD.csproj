@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AtenderPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtenderPaciente.Designer.cs">
+      <DependentUpon>AtenderPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="BitacoraCitas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     <Compile Include="SoicitarCita.Designer.cs">
       <DependentUpon>SoicitarCita.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AtenderPaciente.resx">
+      <DependentUpon>AtenderPaciente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BitacoraCitas.resx">
       <DependentUpon>BitacoraCitas.cs</DependentUpon>
     </EmbeddedResource>
