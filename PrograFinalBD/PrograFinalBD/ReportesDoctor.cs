@@ -201,8 +201,79 @@ namespace PrograFinalBD
 
         private void button5_Click(object sender, EventArgs e)
         {
+            string consulta;
+            conexionBD consultaBase = new conexionBD();
+            if (OpcionesReporte.Text == "Citas Registradas en el Sistema")
+            {
+                if (FiltrarPor.Text == "Rango de Fechas")
+                {
 
+                    consulta = "Select * " + "from cita " + "where fechaCita between '" + textBox1.Text + "' and '" + textBox2.Text + "' ";
+                    consultaBase.seleccionarconjoin(dataGridView1, "cita", "numeroCita", consulta);
+
+                }
+
+                if (FiltrarPor.Text == "Estado")
+                {
+                    consulta = "Select * " + "from cita " + "where estadoCita = '" + EstadoT.Text + "' ";
+                    consultaBase.seleccionarconjoin(dataGridView1, "cita", "numeroCita", consulta);
+                }
+                if (FiltrarPor.Text == "Especialidad")
+                {
+                    consulta = "Select * " + "from cita " + "where nombreArea = '" + textBox3.Text + "' ";
+                    consultaBase.seleccionarconjoin(dataGridView1, "cita", "numeroCita", consulta);
+
+                }
+                if (FiltrarPor.Text == "Nombre de paciente")
+                {
+                    consulta = "Select * " + "from cita, pacientesolicitacita, persona " + "where  cita.numeroCita = pacientesolicitacita.numeroCita and pacientesolicitacita.cedula = persona.cedula and persona.nombre = '" + textBox3.Text + "' ";
+                    consultaBase.seleccionarconjoin(dataGridView1, "cita", "numeroCita", consulta);
+                }
+             
+
+            }
+            if (OpcionesReporte.Text == "Diagnósticos asociados a un paciente")
+            {
+                if (comboBox1.Text == "Rango de Fechas")
+                {
+                    consulta = "Select * " + "from persona, pacientesolicitacita, cita, diagnostico_cita  " + "where persona.cedula = pacientesolicitacita.cedula and pacientesolicitacita.numeroCita = cita.numeroCita and cita.numeroCita = diagnostico_cita.numeroCita and cita.fechaCita between '" + textBox1.Text + "' and '" + textBox2.Text + "' ";
+                    consultaBase.seleccionarconjoin(dataGridView1, "cita", "numeroCita", consulta);
+
+                }
+
+                if (comboBox1.Text == "Nivel")
+                {
+                    consulta = "Select * " + "from persona, pacientesolicitacita, cita, diagnostico_cita  " + "where persona.cedula = pacientesolicitacita.cedula and pacientesolicitacita.numeroCita = cita.numeroCita and cita.numeroCita = diagnostico_cita.numeroCita and diagnostico_cita.nivelDiagnostico = '" + textBox6.Text + "' ";
+                    consultaBase.seleccionarconjoin(dataGridView1, "cita", "numeroCita", consulta);
+                }
+                if (comboBox1.Text == "Nombre")
+                {
+
+                    consulta = "Select * " + "from persona, pacientesolicitacita, cita, diagnostico_cita  " + "where persona.cedula = pacientesolicitacita.cedula and pacientesolicitacita.numeroCita = cita.numeroCita and cita.numeroCita = diagnostico_cita.numeroCita and diagnostico_cita.nombreDiagnostico = '" + textBox7.Text + "' and " + "persona.nomre = " + ;
+                    consultaBase.seleccionarconjoin(dataGridView1, "cita", "numeroCita", consulta);
+                }
+
+
+            }
+            if (OpcionesReporte.Text == "Tratamiento asociado a un paciente")
+            {
+
+            }
+            if (OpcionesReporte.Text == "Cantidad de citas registradas en el sistema")
+            {
+              
+            }
+            if (OpcionesReporte.Text == "Cantidad de diagnósticos")
+            {
+
+            }
+            if (OpcionesReporte.Text == "Cantidad de tratamientos")
+            {
+
+            }
         }
+
     }
-}
+    }
+
 
