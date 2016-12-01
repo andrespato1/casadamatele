@@ -30,7 +30,7 @@
         {
             this.DataGridCancelarCitas = new System.Windows.Forms.DataGridView();
             this.BtnCancelarCita = new System.Windows.Forms.Button();
-            this.TextIdCancelar = new System.Windows.Forms.TextBox();
+            this.TxtIdCancelar = new System.Windows.Forms.TextBox();
             this.BtnAtras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridCancelarCitas)).BeginInit();
             this.SuspendLayout();
@@ -52,15 +52,16 @@
             this.BtnCancelarCita.Name = "BtnCancelarCita";
             this.BtnCancelarCita.Size = new System.Drawing.Size(124, 44);
             this.BtnCancelarCita.TabIndex = 1;
-            this.BtnCancelarCita.Text = "Eliminar";
+            this.BtnCancelarCita.Text = "Cancelar";
             this.BtnCancelarCita.UseVisualStyleBackColor = false;
+            this.BtnCancelarCita.Click += new System.EventHandler(this.BtnCancelarCita_Click);
             // 
-            // TextIdCancelar
+            // TxtIdCancelar
             // 
-            this.TextIdCancelar.Location = new System.Drawing.Point(468, 323);
-            this.TextIdCancelar.Name = "TextIdCancelar";
-            this.TextIdCancelar.Size = new System.Drawing.Size(124, 20);
-            this.TextIdCancelar.TabIndex = 2;
+            this.TxtIdCancelar.Location = new System.Drawing.Point(468, 323);
+            this.TxtIdCancelar.Name = "TxtIdCancelar";
+            this.TxtIdCancelar.Size = new System.Drawing.Size(124, 20);
+            this.TxtIdCancelar.TabIndex = 2;
             // 
             // BtnAtras
             // 
@@ -82,7 +83,7 @@
             this.BackgroundImage = global::PrograFinalBD.Properties.Resources.cancelling_an_it_project_100413129_primary_idge;
             this.ClientSize = new System.Drawing.Size(604, 374);
             this.Controls.Add(this.BtnAtras);
-            this.Controls.Add(this.TextIdCancelar);
+            this.Controls.Add(this.TxtIdCancelar);
             this.Controls.Add(this.BtnCancelarCita);
             this.Controls.Add(this.DataGridCancelarCitas);
             this.Name = "CancelarCitas";
@@ -98,7 +99,7 @@
 
         private System.Windows.Forms.DataGridView DataGridCancelarCitas;
         private System.Windows.Forms.Button BtnCancelarCita;
-        private System.Windows.Forms.TextBox TextIdCancelar;
+        private System.Windows.Forms.TextBox TxtIdCancelar;
         private System.Windows.Forms.Button BtnAtras;
     }
 }

@@ -70,6 +70,7 @@
             this.BtnCambiarEstadoCitaMenuEnfermero.TabIndex = 2;
             this.BtnCambiarEstadoCitaMenuEnfermero.Text = "Cambiar Estado De Cita";
             this.BtnCambiarEstadoCitaMenuEnfermero.UseVisualStyleBackColor = false;
+            this.BtnCambiarEstadoCitaMenuEnfermero.Click += new System.EventHandler(this.BtnCambiarEstadoCitaMenuEnfermero_Click);
             // 
             // BtnEjecutarReportesMenuEnfermero
             // 

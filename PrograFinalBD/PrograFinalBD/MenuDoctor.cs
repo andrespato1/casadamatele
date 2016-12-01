@@ -41,7 +41,7 @@ namespace PrograFinalBD
 
         private void BtnCambiarEstadoCitaMenuDoctor_Click(object sender, EventArgs e)
         {
-            CambiarEstadoCita nuevo = new PrograFinalBD.CambiarEstadoCita();
+            CambiarEstadoCita nuevo = new PrograFinalBD.CambiarEstadoCita("Doc");
             nuevo.Show();
             Hide();
         }

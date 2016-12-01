@@ -12,6 +12,7 @@ namespace PrograFinalBD
 {
     public partial class CancelarCitas : Form
     {
+        conexionBD nuevaConexion = new conexionBD();
         string ventanaDeRetorno;
         public string ced_paciente = "";
         public CancelarCitas(string Ventana)
@@ -55,13 +56,27 @@ namespace PrograFinalBD
         {
             if (ventanaDeRetorno == "Pac")
             {
-                conexionBD nuevaConexion = new PrograFinalBD.conexionBD();
                 nuevaConexion.seleccionarValoresBaseDatosTodasLasTablas(DataGridCancelarCitas, "pacienteSolicitaCita", "cedula = ", ced_paciente);
             }
-            else {
-                conexionBD nuevaConexion = new PrograFinalBD.conexionBD();
+            else
+            {
                 nuevaConexion.seleccionarValoresBaseDatosTodasLasTablas(DataGridCancelarCitas, "cita", "numeroCita", "");
             }
+        }
+
+        private void BtnCancelarCita_Click(object sender, EventArgs e)
+        {
+            string query = "update cita set estadoCita = 'cancelada' ";
+            nuevaConexion.actualizarValoresBaseDatos(query, "numeroCita",TxtIdCancelar.Text );
+            if (ventanaDeRetorno == "Pac")
+            {
+                nuevaConexion.seleccionarValoresBaseDatosTodasLasTablas(DataGridCancelarCitas, "pacienteSolicitaCita", "cedula = ", ced_paciente);
+            }
+            else
+            {
+                nuevaConexion.seleccionarValoresBaseDatosTodasLasTablas(DataGridCancelarCitas, "cita", "numeroCita", "");
+            }
+            TxtIdCancelar.Text = "";
         }
     }
 }

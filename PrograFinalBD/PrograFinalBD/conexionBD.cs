@@ -11,11 +11,11 @@ namespace PrograFinalBD
     class conexionBD
     {
         MySqlConnection conexionBaseDatos;
-
+        
         public conexionBD()
         {
             conexionBaseDatos = new MySqlConnection();
-            // conexionBaseDatos.ConnectionString = "server=localhost;user id=root;password=jorge125;database=centromedico";
+            //conexionBaseDatos.ConnectionString = "server=localhost;user id=root;password=jorge125;database=centromedico";
             conexionBaseDatos.ConnectionString = "server=localhost;user id=root;password=root;database=centromedico";
         }
 
