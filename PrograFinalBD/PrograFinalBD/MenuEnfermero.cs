@@ -49,5 +49,10 @@ namespace PrograFinalBD
             nueva.Show();
             Hide();
         }
+
+        private void BtnEjecutarReportesMenuEnfermero_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

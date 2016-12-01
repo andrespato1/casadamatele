@@ -82,6 +82,7 @@
             this.BtnEjecutarReportesMenuEnfermero.TabIndex = 3;
             this.BtnEjecutarReportesMenuEnfermero.Text = "Ejecutar Reportes";
             this.BtnEjecutarReportesMenuEnfermero.UseVisualStyleBackColor = false;
+            this.BtnEjecutarReportesMenuEnfermero.Click += new System.EventHandler(this.BtnEjecutarReportesMenuEnfermero_Click);
             // 
             // BtnAyudaMenuEnfermero
             // 

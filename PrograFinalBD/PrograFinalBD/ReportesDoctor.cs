@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,7 +34,8 @@ namespace PrograFinalBD
                 textBox5.Hide();
 
             }
-            if (OpcionesReporte.Text == "Diagnósticos asociados a un paciente") {
+            if (OpcionesReporte.Text == "Diagnósticos asociados a un paciente")
+            {
                 label2.Show();
                 comboBox1.Show();
                 FiltrarPor.Hide();
@@ -60,10 +62,12 @@ namespace PrograFinalBD
                 label7.Hide();
                 textBox6.Hide();
             }
-            if (OpcionesReporte.Text == "Tratamiento asociado a un paciente") {
-                
+            if (OpcionesReporte.Text == "Tratamiento asociado a un paciente")
+            {
+
             }
-            if (OpcionesReporte.Text == "Cantidad de citas registradas en el sistema") {
+            if (OpcionesReporte.Text == "Cantidad de citas registradas en el sistema")
+            {
                 label2.Show();
                 FiltrarPor.Show();
                 button3.Show();
@@ -82,10 +86,12 @@ namespace PrograFinalBD
                 textBox1.Hide();
                 textBox2.Hide();
             }
-            if (OpcionesReporte.Text == "Cantidad de diagnósticos") {
+            if (OpcionesReporte.Text == "Cantidad de diagnósticos")
+            {
 
             }
-            if (OpcionesReporte.Text == "Cantidad de tratamientos") {
+            if (OpcionesReporte.Text == "Cantidad de tratamientos")
+            {
 
             }
         }
@@ -229,7 +235,7 @@ namespace PrograFinalBD
                     consulta = "Select * " + "from cita, pacientesolicitacita, persona " + "where  cita.numeroCita = pacientesolicitacita.numeroCita and pacientesolicitacita.cedula = persona.cedula and persona.nombre = '" + textBox3.Text + "' ";
                     consultaBase.seleccionarconjoin(dataGridView1, "cita", "numeroCita", consulta);
                 }
-             
+
 
             }
             if (OpcionesReporte.Text == "Diagnósticos asociados a un paciente")
@@ -249,7 +255,7 @@ namespace PrograFinalBD
                 if (comboBox1.Text == "Nombre")
                 {
 
-                    consulta = "Select * " + "from persona, pacientesolicitacita, cita, diagnostico_cita  " + "where persona.cedula = pacientesolicitacita.cedula and pacientesolicitacita.numeroCita = cita.numeroCita and cita.numeroCita = diagnostico_cita.numeroCita and diagnostico_cita.nombreDiagnostico = '" + textBox7.Text + "' and " + "persona.nomre = " + ;
+                    consulta = "Select * " + "from persona, pacientesolicitacita, cita, diagnostico_cita  " + "where persona.cedula = pacientesolicitacita.cedula and pacientesolicitacita.numeroCita = cita.numeroCita and cita.numeroCita = diagnostico_cita.numeroCita and diagnostico_cita.nombreDiagnostico = '" + textBox7.Text + "' and " + "persona.nombre = " + textBox5.Text;
                     consultaBase.seleccionarconjoin(dataGridView1, "cita", "numeroCita", consulta);
                 }
 
@@ -261,7 +267,25 @@ namespace PrograFinalBD
             }
             if (OpcionesReporte.Text == "Cantidad de citas registradas en el sistema")
             {
-              
+                if (FiltrarPor.Text == "Rango de Fechas")
+                {
+
+                    consulta = "Select count(numeroCita) " + "from cita " + "where fechaCita between '" + textBox1.Text + "' and '" + textBox2.Text + "' ";
+                    consultaBase.seleccionarconjoin(dataGridView1, "cita", "numeroCita", consulta);
+
+                }
+
+                if (FiltrarPor.Text == "Estado")
+                {
+                    consulta = "Select count(numeroCita) " + "from cita " + "where estadoCita = '" + EstadoT.Text + "' ";
+                    consultaBase.seleccionarconjoin(dataGridView1, "cita", "numeroCita", consulta);
+                }
+                if (FiltrarPor.Text == "Especialidad")
+                {
+                    consulta = "Select count(numeroCita) " + "from cita " + "where nombreArea = '" + textBox3.Text + "' ";
+                    consultaBase.seleccionarconjoin(dataGridView1, "cita", "numeroCita", consulta);
+
+                }
             }
             if (OpcionesReporte.Text == "Cantidad de diagnósticos")
             {
@@ -273,7 +297,14 @@ namespace PrograFinalBD
             }
         }
 
-    }
-    }
+        private void button1_Click(object sender, EventArgs e)
+        {
+         
+              
+                    }
+                }
+            }
+        
+
 
 
