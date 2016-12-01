@@ -83,6 +83,7 @@
             this.BtnAtenderCitaMenuDoctor.TabIndex = 3;
             this.BtnAtenderCitaMenuDoctor.Text = "Atender Cita";
             this.BtnAtenderCitaMenuDoctor.UseVisualStyleBackColor = false;
+            this.BtnAtenderCitaMenuDoctor.Click += new System.EventHandler(this.BtnAtenderCitaMenuDoctor_Click);
             // 
             // BtnEjecutarReportesMenuDoctor
             // 

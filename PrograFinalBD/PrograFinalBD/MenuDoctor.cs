@@ -52,5 +52,12 @@ namespace PrograFinalBD
             RDoc.Show();
             this.Close();
         }
+
+        private void BtnAtenderCitaMenuDoctor_Click(object sender, EventArgs e)
+        {
+            AtenderPaciente nuevo = new AtenderPaciente();
+            nuevo.Show();
+            Hide();
+        }
     }
 }
