@@ -92,8 +92,9 @@
             this.BtnEjecutarReportesMenuDoctor.Name = "BtnEjecutarReportesMenuDoctor";
             this.BtnEjecutarReportesMenuDoctor.Size = new System.Drawing.Size(132, 49);
             this.BtnEjecutarReportesMenuDoctor.TabIndex = 4;
-            this.BtnEjecutarReportesMenuDoctor.Text = "Ejecutar Reportes";
+            this.BtnEjecutarReportesMenuDoctor.Text = "Generar Reportes";
             this.BtnEjecutarReportesMenuDoctor.UseVisualStyleBackColor = false;
+            this.BtnEjecutarReportesMenuDoctor.Click += new System.EventHandler(this.BtnEjecutarReportesMenuDoctor_Click);
             // 
             // BtnAtrasMenuDoctor
             // 

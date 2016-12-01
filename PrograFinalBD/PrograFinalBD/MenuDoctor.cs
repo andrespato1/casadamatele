@@ -45,5 +45,12 @@ namespace PrograFinalBD
             nuevo.Show();
             Hide();
         }
+
+        private void BtnEjecutarReportesMenuDoctor_Click(object sender, EventArgs e)
+        {
+            ReportesDoctor RDoc = new ReportesDoctor();
+            RDoc.Show();
+            this.Close();
+        }
     }
 }
