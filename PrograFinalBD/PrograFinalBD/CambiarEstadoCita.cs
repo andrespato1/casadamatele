@@ -24,5 +24,10 @@ namespace PrograFinalBD
             query = query + " where cita.numeroCita = pacienteSolicitaCita.numeroCita and pacienteSolicitaCita.cedula = 504100497";
             nuevaconexion.seleccionarconjoin(dataGridView1, "cita,pacienteSolicitaCita", "numeroCita", query);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

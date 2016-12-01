@@ -95,6 +95,16 @@ namespace PrograFinalBD.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bitacora {
+            get {
+                object obj = ResourceManager.GetObject("bitacora", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancelling_an_it_project_100413129_primary_idge {
             get {
                 object obj = ResourceManager.GetObject("cancelling-an-it-project-100413129-primary.idge", resourceCulture);
@@ -118,6 +128,16 @@ namespace PrograFinalBD.Properties {
         internal static System.Drawing.Bitmap elementos_graficos_de_medicina_23_2147490516 {
             get {
                 object obj = ResourceManager.GetObject("elementos-graficos-de-medicina_23-2147490516", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ideass {
+            get {
+                object obj = ResourceManager.GetObject("Ideass", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

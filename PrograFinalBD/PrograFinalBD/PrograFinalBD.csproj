@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitacoraCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BitacoraCitas.Designer.cs">
+      <DependentUpon>BitacoraCitas.cs</DependentUpon>
+    </Compile>
     <Compile Include="CambiarEstadoCita.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,12 @@
     </Compile>
     <Compile Include="CrearFuncionarios.Designer.cs">
       <DependentUpon>CrearFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectorioDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectorioDatos.Designer.cs">
+      <DependentUpon>DirectorioDatos.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -131,6 +143,9 @@
     <Compile Include="SoicitarCita.Designer.cs">
       <DependentUpon>SoicitarCita.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BitacoraCitas.resx">
+      <DependentUpon>BitacoraCitas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CambiarEstadoCita.resx">
       <DependentUpon>CambiarEstadoCita.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CrearFuncionarios.resx">
       <DependentUpon>CrearFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectorioDatos.resx">
+      <DependentUpon>DirectorioDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -211,6 +229,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancelling-an-it-project-100413129-primary.idge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ideass.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bitacora.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

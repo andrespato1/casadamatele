@@ -15,7 +15,8 @@ namespace PrograFinalBD
         public conexionBD()
         {
             conexionBaseDatos = new MySqlConnection();
-            conexionBaseDatos.ConnectionString = "server=localhost;user id=root;password=jorge125;database=centromedico";
+            // conexionBaseDatos.ConnectionString = "server=localhost;user id=root;password=jorge125;database=centromedico";
+            conexionBaseDatos.ConnectionString = "server=localhost;user id=root;password=root;database=centromedico";
         }
 
         public void abrirConexion()
@@ -148,7 +149,7 @@ namespace PrograFinalBD
             {
                 abrirConexion();
                 System.Data.DataSet dataSet = new System.Data.DataSet();
-                string selectQuery= query;
+                string selectQuery = query;
                 MySqlDataAdapter MiDataAdapter = new MySqlDataAdapter(selectQuery, conexionBaseDatos);
                 MiDataAdapter.Fill(dataSet, columna);
                 ventana.DataSource = dataSet;
@@ -213,5 +214,47 @@ namespace PrograFinalBD
 
 
         }
+        public void generarTablas(DataGridView tablaD, string columna) {
+
+            try
+            {
+                abrirConexion();
+                System.Data.DataSet dataSet = new System.Data.DataSet();
+                string UseQuery;
+                UseQuery = "SHOW TABLES";
+
+                MySqlDataAdapter MiDataAdapter = new MySqlDataAdapter(UseQuery, conexionBaseDatos);
+                MiDataAdapter.Fill(dataSet, columna);
+                tablaD.DataSource = dataSet;
+                tablaD.DataMember = columna;
+                cerrarConexion();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al seleccionar valores en la base de datos :" + ex.Message, "Error de ejecucion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+        public void DescribirTablas(DataGridView tabla, string nombreTabla, string columna) {
+
+            try
+            {
+                abrirConexion();
+                System.Data.DataSet dataSet = new System.Data.DataSet();
+                string DescribeQuery;
+                DescribeQuery = "DESCRIBE " + nombreTabla;
+
+                MySqlDataAdapter MiDataAdapter = new MySqlDataAdapter(DescribeQuery, conexionBaseDatos);
+                MiDataAdapter.Fill(dataSet, columna);
+                tabla.DataSource = dataSet;
+                tabla.DataMember = columna;
+                cerrarConexion();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al seleccionar valores en la base de datos :" + ex.Message, "Error de ejecucion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+    
     }
 }

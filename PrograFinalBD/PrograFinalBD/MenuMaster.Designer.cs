@@ -33,6 +33,7 @@
             this.BtnRegistrarFuncionariosMenuMaster = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.BtnAyudaVtnMenuMaster = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -92,12 +93,23 @@
             this.BtnAyudaVtnMenuMaster.UseVisualStyleBackColor = false;
             this.BtnAyudaVtnMenuMaster.Click += new System.EventHandler(this.BtnAyudaVtnMenuMaster_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(24, 89);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(245, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Diccionario de Datos";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // MenuMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PrograFinalBD.Properties.Resources.depositphotos_7229389_stock_illustration_computer_repair_service;
             this.ClientSize = new System.Drawing.Size(573, 389);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.BtnAyudaVtnMenuMaster);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnRegistrarFuncionariosMenuMaster);
@@ -117,5 +129,6 @@
         private System.Windows.Forms.Button BtnRegistrarFuncionariosMenuMaster;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BtnAyudaVtnMenuMaster;
+        private System.Windows.Forms.Button button2;
     }
 }
