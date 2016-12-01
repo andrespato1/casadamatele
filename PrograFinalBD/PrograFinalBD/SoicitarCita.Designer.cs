@@ -33,7 +33,7 @@
             this.TxtHora = new System.Windows.Forms.TextBox();
             this.TxtCedula = new System.Windows.Forms.TextBox();
             this.TxtNomArea = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtFec = new System.Windows.Forms.TextBox();
             this.BtnGenerarCita = new System.Windows.Forms.Button();
             this.BtnAtras = new System.Windows.Forms.Button();
             this.BtnAyuda = new System.Windows.Forms.Button();
@@ -86,12 +86,12 @@
             this.TxtNomArea.Size = new System.Drawing.Size(100, 20);
             this.TxtNomArea.TabIndex = 4;
             // 
-            // textBox6
+            // txtFec
             // 
-            this.textBox6.Location = new System.Drawing.Point(12, 189);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 3;
+            this.txtFec.Location = new System.Drawing.Point(12, 189);
+            this.txtFec.Name = "txtFec";
+            this.txtFec.Size = new System.Drawing.Size(100, 20);
+            this.txtFec.TabIndex = 3;
             // 
             // BtnGenerarCita
             // 
@@ -272,7 +272,7 @@
             this.Controls.Add(this.BtnGenerarCita);
             this.Controls.Add(this.TxtCedula);
             this.Controls.Add(this.TxtNomArea);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtFec);
             this.Controls.Add(this.TxtHora);
             this.Controls.Add(this.TxtObservaciones);
             this.Controls.Add(this.TxtEstado);
@@ -292,7 +292,7 @@
         private System.Windows.Forms.TextBox TxtHora;
         private System.Windows.Forms.TextBox TxtCedula;
         private System.Windows.Forms.TextBox TxtNomArea;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtFec;
         private System.Windows.Forms.Button BtnGenerarCita;
         private System.Windows.Forms.Button BtnAtras;
         private System.Windows.Forms.Button BtnAyuda;
